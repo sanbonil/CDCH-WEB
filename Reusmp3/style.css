@@ -75,6 +75,25 @@ h3{
     align-items: center;
 }
 #carouselExampleSlidesOnly{
-    margin-top: 20px;
-    width: 50%;
+    flex: 1;
+    margin-right: 30px;
+}
+#content{
+    padding: 50px;
+    width: 70%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@media (max-width: 1200px){
+    #content{
+        flex-direction: column;
+        width: 90%;
+    }
+    #carouselExampleSlidesOnly{
+        margin: 0;
+        margin-bottom: 30px;
+    }
 }
