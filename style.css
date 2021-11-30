@@ -88,11 +88,12 @@ h3{
 }
 #firstImage{
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 #firstImageContainer{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1200px){
