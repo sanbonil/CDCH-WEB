@@ -7,6 +7,9 @@
 body{
     font-family: 'Sora', sans-serif;
 }
+ul{
+    list-style: none;
+}
 
 header{
     height: 100vh;
@@ -68,11 +71,12 @@ h3{
     justify-content: center;
     align-items: center;
 }
-#project{
+#project,#membersContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 #carouselExampleSlidesOnly{
     flex: 1;
@@ -94,6 +98,43 @@ h3{
 #firstImageContainer{
     width: 100%;
 }
+
+#membersContainer{
+    width: 100%;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.member {
+    text-align: center;
+    flex-basis: 33%;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.member-name {
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #3267b2;
+}
+
+.member-role {
+    font-style: italic;
+    font-size: 18px;
+}
+
 
 @media (max-width: 1200px){
     #content{
