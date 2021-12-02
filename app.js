@@ -12,11 +12,15 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 800 ||
-    document.documentElement.scrollTop > 800
-  ) {
+  if (document.body.scrollTop > 800 ||document.documentElement.scrollTop > 800) {
     mybutton.style.display = "block";
+    /*if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+      mybutton.style.bottom= "";
+    }
+    else{
+      mybutton.style.bottom= "20px";
+    }*/
+    
   } else {
     mybutton.style.display = "none";
   }

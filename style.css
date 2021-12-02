@@ -23,6 +23,9 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
 
 #info{
     flex: 2;
@@ -58,6 +61,7 @@ h3{
     bottom: 20px;
     right: 20px;
     display: none;
+    z-index: 9999;
 }
 #btn-back-to-top:hover{
     cursor: pointer;
@@ -81,7 +85,7 @@ h3{
     justify-content: center;
     align-items: center;
 }
-#project,#membersContainer{
+.sectionContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +113,7 @@ h3{
     width: 100%;
 }
 
-#membersContainer{
+#membersContainer,#publicationsContainer{
     width: 100%;
 }
 .container {
@@ -146,6 +150,18 @@ h3{
     font-style: italic;
     font-size: 18px;
 }
+#accordionFlushExample{
+    margin-top: 30px;
+    width: 70%;
+}
+.accordion-button{
+    font-weight: bold;
+}
+footer{
+    background-image: url("./images/gradient.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
 
 @media (max-width: 1200px){
@@ -156,5 +172,8 @@ h3{
     #carouselExampleSlidesOnly{
         margin: 0;
         margin-bottom: 30px;
+    }
+    #accordionFlushExample{
+        width: 90%;
     }
 }

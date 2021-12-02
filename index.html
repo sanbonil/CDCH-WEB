@@ -15,7 +15,7 @@
     <header>
         <nav id="navBar" class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand ">
                     <img id="navLogo" src="./images/logoHorizontal.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                             <a class="nav-link"  href="#membersContainer">Members</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="#">Publications</a>
+                            <a class="nav-link"  href="#publicationsContainer">Publications</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"  href="#">Contact</a>
@@ -49,12 +49,12 @@
         <svg onclick="scrollDown()" id="scrollDown" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
         </svg>
+    </header>
+    <section id="container">
         <svg id="btn-back-to-top" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#3267b2" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
-    </header>
-    <section id="container">
-        <section id="project">
+        <section class="sectionContainer">
             <h3>PROJECT</h3>
             <div id="content">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="10000">
@@ -75,7 +75,7 @@
                 </p>
             </div>
         </section>
-        <section id="membersContainer">
+        <section class="sectionContainer" id="membersContainer">
             <h3>MEMBERS</h3>
             <div class="container">
                 <div class="members">
@@ -111,7 +111,59 @@
                 </div>
               </div>
         </section>
+        <section class="sectionContainer" id="publicationsContainer">
+          <h3>PUBLICATIONS</h3>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Publication 1
+                </button>
+              </h3>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus incidunt, hic fuga totam possimus obcaecati nulla quisquam fugit expedita autem quia similique numquam doloribus suscipit enim? Voluptate, totam magni.</div>
+                <a class="accordion-body" href="#">PUBLICATION LINK</a>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Publication 2
+                </button>
+              </h3>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus incidunt, hic fuga totam possimus obcaecati nulla quisquam fugit expedita autem quia similique numquam doloribus suscipit enim? Voluptate, totam magni.</div>
+                <a class="accordion-body" href="#">PUBLICATION LINK</a>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Publication 3
+                </button>
+              </h3>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus incidunt, hic fuga totam possimus obcaecati nulla quisquam fugit expedita autem quia similique numquam doloribus suscipit enim? Voluptate, totam magni.</div>
+                <a class="accordion-body" href="#">PUBLICATION LINK</a>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Publication 4
+                </button>
+              </h3>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus incidunt, hic fuga totam possimus obcaecati nulla quisquam fugit expedita autem quia similique numquam doloribus suscipit enim? Voluptate, totam magni.</div>
+                <a class="accordion-body" href="#">PUBLICATION LINK</a>
+              </div>
+            </div>
+          </div>
+        </section>
     </section>
+    <footer>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
