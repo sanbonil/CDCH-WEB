@@ -1,3 +1,11 @@
+document.getElementById("popoverButton").setAttribute("data-bs-content","<ul id='languageList'><li class='languageElement'>English</li><li class='languageElement'>Spanish</li><li class='languageElement'>Catalan</li></ul>")
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
 function scrollDown(){
     var element = document.getElementById("container");
     element.scrollIntoView({behavior: "smooth"});
@@ -20,7 +28,6 @@ function scrollFunction() {
     else{
       mybutton.style.bottom= "20px";
     }*/
-    
   } else {
     mybutton.style.display = "none";
   }

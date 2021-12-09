@@ -26,6 +26,20 @@ header{
 a{
     text-decoration: none;
 }
+#languageList{
+    margin: 0;
+    padding: 0;
+}
+.languageElement{
+    padding: 10px;
+}
+.languageElement:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+#languageContainer{
+    display: none;
+}
 
 #info{
     flex: 2;
@@ -175,5 +189,16 @@ footer{
     }
     #accordionFlushExample{
         width: 90%;
+    }
+}
+
+@media (max-width: 991px){
+    #popoverButton{
+        display: none;
+    }
+    #languageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
