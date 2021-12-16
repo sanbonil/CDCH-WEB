@@ -6,6 +6,16 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
 
+document.addEventListener("DOMContentLoaded", function(){
+  var myOffcanvas = document.getElementById('offcanvasRight');
+  var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+  document.getElementById("offcanvasButton").addEventListener('click',function (e){
+    e.preventDefault();
+    e.stopPropagation();
+    bsOffcanvas.toggle();
+  });
+});
+
 function scrollDown(){
     var element = document.getElementById("container");
     element.scrollIntoView({behavior: "smooth"});
