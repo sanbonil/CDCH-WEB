@@ -38,7 +38,9 @@ a{
     font-weight: bold;
 }
 #languageContainer{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #info{
@@ -68,6 +70,9 @@ h3{
 }
 #navLinks a{
     color: white;
+}
+#offcanvasLinks a{
+    color: black;
 }
 
 #btn-back-to-top {
@@ -189,16 +194,5 @@ footer{
     }
     #accordionFlushExample{
         width: 90%;
-    }
-}
-
-@media (max-width: 991px){
-    #popoverButton{
-        display: none;
-    }
-    #languageContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
