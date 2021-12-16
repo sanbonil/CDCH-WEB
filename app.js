@@ -14,7 +14,17 @@ document.addEventListener("DOMContentLoaded", function(){
     e.stopPropagation();
     bsOffcanvas.toggle();
   });
+
+  const elements = document.getElementsByClassName("canvas-links")
+
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click',function (e){
+      e.stopPropagation();
+      bsOffcanvas.toggle();
+    });
+  }
 });
+
 
 function scrollDown(){
     var element = document.getElementById("container");
