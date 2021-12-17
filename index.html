@@ -23,22 +23,30 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul id="navLinks" class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                          <button id="popoverButton" type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true">
-                            <img src="images/en.svg" width="16" height="11" loading="lazy">      
-                          </button>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#container">Project</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#container">Overview</a></li>
+                            <li><a class="dropdown-item" href="#workPackages">Work packages</a></li>
+                            <li><a class="dropdown-item" href="#fieldSites">Field sites</a></li>
+                            <li><a class="dropdown-item" href="#mesocosmStudies">Mesocosm studies</a></li>
+                          </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"  href="#membersContainer">Members</a>
                         </li>
                         <li class="nav-item">
+                          <a class="nav-link"  href="#">Institutions</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link"  href="#publicationsContainer">Publications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="#">Contact</a>
+                          <button id="popoverButton" type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true">
+                            <img src="images/en.svg" width="16" height="11" loading="lazy">      
+                          </button>
                         </li>
                     </ul>
                 </div>
@@ -50,23 +58,33 @@
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul id="offcanvasLinks" class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto">
                 <li class="nav-item" id="languageContainer">
                   <img src="images/en.svg" width="22" height="15" loading="lazy">
                   <img style="margin:0px 10px 0px 10px" src="images/es.svg" width="22" height="15" loading="lazy">    
                   <img src="images/cat.svg" width="22" height="15" loading="lazy">
                 </li>
                 <li class="nav-item">
-                    <a class="nav- canvas-links" href="#container">Project</a>
+                    <a class="nav-link canvas-links" href="#container">Project Overview</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link canvas-links" href="#workPackages">Work packages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links" href="#fieldSites">Field sites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link canvas-links" href="#mesocosmStudies">Mesocosm studies</a>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link canvas-links" href="#membersContainer">Members</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link canvas-links"  href="#publicationsContainer">Publications</a>
+                  <a class="nav-link canvas-links"  href="#">Institutions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link canvas-links"  href="#">Contact</a>
+                  <a class="nav-link canvas-links"  href="#publicationsContainer">Publications</a>
                 </li>
               </ul>
             </div>
@@ -87,8 +105,8 @@
           <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
         <section class="sectionContainer">
-            <h3>PROJECT</h3>
-            <div id="content">
+            <h3>PROJECT OVERVIEW</h3>
+            <div class="content">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="10000">
                     <div class="carousel-inner">
                       <div id="firstImageContainer" class="carousel-item active">
@@ -105,6 +123,44 @@
                   All the data collected during the project will also allow the development of innovative <b>decision support tools for water management</b>. 
                 </p>
             </div>
+        </section>
+        <section class="sectionContainer" id="workPackages">
+          <h3>WORK PACKAGES</h3>
+          <div class="column-content">
+            <img src="./images/workpackages.png" class="d-block w-100" alt="...">
+            <p style="margin: 0; margin-top: 30px ;font-size: 1.05rem;">
+              <b>WP1:</b> Hydroponic greywater treatment and reuse system for crops production under controlled conditions<br> 
+              <b>WP2:</b> Field case studies of reclaimed water irrigation for crops production and/or NBS applications<br>
+              <b>WP3:</b> Advanced analytical tools to monitor water treatment technologies and irrigation systems<br>
+              <b>WP4:</b> Environmental Risk Assessment (ERA)<br>
+              <b>WP5:</b> Human Risk Assessment derived from crop production<br>
+              <b>WP6:</b> ReuseMP3 decision support tool<br>
+            </p>
+          </div>
+        </section>
+        <section class="sectionContainer" id="fieldSites">
+          <h3>FIELD SITES</h3>
+          <div class="column-content" id="fieldContent" style="margin-top: 30px;">
+            <img id="fieldSitesImage" src="./images/fieldSites.png" class="d-block" alt="...">
+            <p style="margin: 0; margin-top: 30px ;font-size: 1.05rem;">
+              <b>Tossa de Mar:</b> Municipal gardens irrigated with treated urban wastewater (tertiary treatment)<br>
+              <b>Colera:</b> Vineyards irrigated with treated urban wastewater (tertiary treatment)<br>
+              <b>Lloret de Mar:</b> Ornamental an edible plants irrigated with NBS based treated gray water (hydroponic wetland)<br>
+              <b>Girona:</b> Urban garden irrigated with NBS based treated grey water (wetwall)<br>
+              <b>Lesbos (Greece):</b> Herbs irrigated with NBS based treated urban wastewater (USAB-wetland)<br>
+            </p>
+          </div>
+        </section>
+        <section class="sectionContainer" id="mesocosmStudies">
+          <h3>MESOCOSM STUDIES</h3>
+          <div class="column-content" id="mesocosmContent" style="margin-top: 30px;">
+            <img id="mesocosmImage" src="./images/mesocosm.JPG" class="d-block" alt="...">
+            <p style="flex:1;margin: 0; margin-top: 20px; font-size: 1.05rem;">
+              The hydroponic pilot plant was built in the ICRA PLANTEA platform to test edible plant synthetic and/or real greywater treatment and crop production. 
+              It is made up of several lines that can work in parallel, with distinct influent water, and sensors for temperature, humidity, and light intensity.
+              The canals can be filled in with light expanded clay aggregates (LECA) as inert substratum and can host up to 8 plants per canal. The presence of air bubbling inside the canals is obtained by introducing air dissipators in the water phase, if needed.
+            </p>
+          </div>
         </section>
         <section class="sectionContainer" id="membersContainer">
             <h3>MEMBERS</h3>

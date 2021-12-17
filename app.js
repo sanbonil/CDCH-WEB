@@ -1,3 +1,5 @@
+/*Language popover*/
+
 document.getElementById("popoverButton").setAttribute("data-bs-content","<ul id='languageList'><li class='languageElement'>English</li><li class='languageElement'>Spanish</li><li class='languageElement'>Catalan</li></ul>")
 
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -6,7 +8,9 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
 
+/*Offcanvas actions*/
 document.addEventListener("DOMContentLoaded", function(){
+  /*Offcanvas button*/
   var myOffcanvas = document.getElementById('offcanvasRight');
   var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
   document.getElementById("offcanvasButton").addEventListener('click',function (e){
@@ -15,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
     bsOffcanvas.toggle();
   });
 
+  /*Offcanvas close when links are clicked*/
   const elements = document.getElementsByClassName("canvas-links")
 
   for (let i = 0; i < elements.length; i++) {
@@ -25,12 +30,13 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 });
 
-
+/*scroll down button*/
 function scrollDown(){
     var element = document.getElementById("container");
     element.scrollIntoView({behavior: "smooth"});
 }
 
+//scroll Up button
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
