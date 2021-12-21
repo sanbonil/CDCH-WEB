@@ -26,6 +26,11 @@ header{
 a{
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
+
 #languageList{
     margin: 0;
     padding: 0;
@@ -64,6 +69,7 @@ h3{
     font-weight: bold;
     color: #3267b2;
 }
+
 .navbar{
     width: 100%;
 }
@@ -73,9 +79,16 @@ h3{
 #navLinks a{
     color: white;
 }
+.modal-dialog{
+    max-width: 800px;
+}
+.modal-content{
+    margin: 20px;
+}
 .dropdown-item{
     color: black !important;
 }
+
 .canvas-links{
     color: black;
 }
@@ -161,6 +174,13 @@ h3{
 #membersContainer,#publicationsContainer{
     width: 100%;
 }
+.memberImage{
+    border-radius: 50%; 
+    width: 168px;
+}
+.memberImage:hover{
+    cursor: pointer;
+}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -228,5 +248,17 @@ footer{
 
     #accordionFlushExample{
         width: 90%;
+    }
+    #navLogo{
+        width: 200px;
+    }
+    .container-fluid{
+        padding-left: 0;
+    }
+    #simbol{
+        width: 60px;
+    }
+    #welcomeInfo{
+        font-size: 1.2rem;
     }
 }
