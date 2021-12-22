@@ -65,3 +65,36 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function renderMembers(){
+  const memberContiner = document.getElementById("memberGroup")
+  for(let member of members){
+    memberContiner.innerHTML+=`
+      <div class="member">
+        <img data-bs-toggle="modal" data-bs-target="#member${member.id}Modal" class="memberImage" src="./images/member${member.id}.png" alt="member image">
+        <h4 class="member-name">${member.name}</h4>
+        <span class="member-role">${member.brief}</span>
+      </div>
+
+      <div class="modal fade" id="member${member.id}Modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img class="avatar" src="./images/member${member.id}.png" alt="member image">
+              <h5 class="modal-title" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;margin-left: 20px;">${member.name}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="text-align: justify;">
+                ${member.description}
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="${member.link}" target="_blank">More information</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  }
+}

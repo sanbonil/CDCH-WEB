@@ -178,6 +178,10 @@ h3{
     border-radius: 50%; 
     width: 168px;
 }
+.avatar{
+    border-radius: 50%;
+    width: 68px;
+}
 .memberImage:hover{
     cursor: pointer;
 }
