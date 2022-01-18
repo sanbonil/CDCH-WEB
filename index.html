@@ -12,7 +12,7 @@
     <link rel="icon" href="./images/simbol.svg">
     <title>Reusemp3</title>
 </head>
-<body onload="renderMembers()">
+<body onload="render()">
     <header>
         <nav id="navBar" class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
@@ -38,8 +38,16 @@
                         <li class="nav-item">
                             <a class="nav-link"  href="#membersContainer">Members</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link"  href="#">Institutions</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Institutions
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#authoritiesContainer">Authorities & utilities</a></li>
+                            <li><a class="dropdown-item" href="#universitiesContainer">Universities</a></li>
+                            <li><a class="dropdown-item" href="#techCompaniesContainer">Tech. companies</a></li>
+                            <li><a class="dropdown-item" href="#advisoryContainer">Advisory board</a></li>
+                          </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"  href="#publicationsContainer">Publications</a>
@@ -105,7 +113,16 @@
                     <a class="nav-link canvas-links" href="#membersContainer">Members</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#">Institutions</a>
+                  <a class="nav-link canvas-links"  href="#authoritiesContainer">Authorities & utilities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#universitiesContainer">Universities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#techCompaniesContainer">Tech. companies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#advisoryContainer">Advisory board</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link canvas-links"  href="#publicationsContainer">Publications</a>
@@ -189,10 +206,52 @@
         <section class="sectionContainer" id="membersContainer">
             <h3>MEMBERS</h3>
             <div class="container">
-                <div class="members" id="memberGroup">
+                <div class="gridLayout" id="memberGroup">
                   
                 </div>
               </div>
+        </section>
+        <section class="sectionContainer" id="authoritiesContainer">
+          <h3>AUTHORITIES & UTILITIES</h3>
+          <div class="container">
+              <div class="gridLayout" id="authoritiesGroup">
+                
+              </div>
+            </div>
+        </section>
+        <section class="sectionContainer" id="universitiesContainer">
+          <h3>UNIVERSITIES</h3>
+          <div class="container">
+              <div class="gridLayout" id="universitiesGroup">
+                
+              </div>
+            </div>
+        </section>
+        <section class="sectionContainer" id="techCompaniesContainer">
+          <h3>TECH. COMPANIES & OTHERS</h3>
+          <div class="container">
+              <div class="gridLayout" id="companiesGroup">
+                
+              </div>
+              <div class="gridLayout" id="othersGroup">
+                
+              </div>
+            </div>
+        </section>
+        <section class="sectionContainer" id="advisoryContainer">
+          <h3>ADVISORY BOARD</h3>
+          <div class="container" id="advisoryBoard">
+            <h4 class="member-name advisor">Evina Katsou</h4>
+            <p>Brunel University, risk assessment, decision support systems and micropollutants</p>
+            <h4 class="member-name advisor">Monica Brienza</h4>
+            <p>Basilicata University, water reuse and micropollutants</p>
+            <h4 class="member-name advisor">Natasa Atanasova</h4>
+            <p>Ljubljana University, co-chair of the Circular City COST, NBS and decision support systems</p>
+            <h4 class="member-name advisor">Pedro Carvalho</h4>
+            <p>Aarhus University, NBS and micropollutants</p>
+            <h4 class="member-name advisor">Xavier Amores</h4>
+            <p>Cluster Manager of the Catalan Water Partnership</p>
+          </div>
         </section>
         <section class="sectionContainer" id="publicationsContainer">
           <h3>PUBLICATIONS</h3>

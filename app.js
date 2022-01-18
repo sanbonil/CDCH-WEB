@@ -66,7 +66,7 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-function renderMembers(){
+function render(){
   const memberContiner = document.getElementById("memberGroup")
   for(let member of members){
     memberContiner.innerHTML+=`
@@ -95,6 +95,30 @@ function renderMembers(){
           </div>
         </div>
       </div>
+    `
+  }
+  const authoritiesContainer = document.getElementById("authoritiesGroup")
+  for(let i=1;i<6;i++){
+    authoritiesContainer.innerHTML+=`
+    <img class="institutionImage" src="./images/authority${i}.png" alt="authority image">
+    `
+  }
+  const universitiesContainer = document.getElementById("universitiesGroup")
+  for(let i=1;i<5;i++){
+    universitiesContainer.innerHTML+=`
+    <img class="institutionImage" src="./images/university${i}.png" alt="university image">
+    `
+  }
+  const companiesContainer = document.getElementById("companiesGroup")
+  const othersContainer = document.getElementById("othersGroup")
+  for(let i=1;i<4;i++){
+    companiesContainer.innerHTML+=`
+    <img class="companyImage" src="./images/company${i}.png" alt="company image">
+    `
+  }
+  for(let i=4;i<6;i++){
+    othersContainer.innerHTML+=`
+    <img class="companyImage" src="./images/company${i}.png" alt="company image">
     `
   }
 }

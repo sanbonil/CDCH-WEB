@@ -178,6 +178,13 @@ h3{
     border-radius: 50%; 
     width: 168px;
 }
+.institutionImage{
+    width: 35%;
+}
+.companyImage{
+    width: 25%;
+    margin-right: 50px;
+}
 .avatar{
     border-radius: 50%;
     width: 68px;
@@ -191,7 +198,7 @@ h3{
     margin-top: 30px;
 }
 
-.members {
+.gridLayout {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,6 +225,12 @@ h3{
 .member-role {
     font-style: italic;
     font-size: 18px;
+}
+#advisoryBoard{
+    padding: 30px;
+}
+.advisor{
+    font-size: 20px;
 }
 #accordionFlushExample{
     margin-top: 30px;
@@ -264,5 +277,11 @@ footer{
     }
     #welcomeInfo{
         font-size: 1.2rem;
+    }
+    .institutionImage{
+        width: 45%;
+    }
+    .companyImage{
+        margin: 10px;
     }
 }
