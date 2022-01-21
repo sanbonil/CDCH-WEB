@@ -27,9 +27,6 @@ a{
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
 
 #languageList{
     margin: 0;
@@ -192,6 +189,7 @@ h3{
 .memberImage:hover{
     cursor: pointer;
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
