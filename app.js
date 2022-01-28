@@ -71,7 +71,12 @@ function render(){
   for(let member of members){
     memberContiner.innerHTML+=`
       <div class="member">
-        <img data-bs-toggle="modal" data-bs-target="#member${member.id}Modal" class="memberImage" src="./images/member${member.id}.png" alt="member image">
+        <div class="pic" data-bs-toggle="modal" data-bs-target="#member${member.id}Modal">
+          <img  class="memberImage" src="./images/member${member.id}.png" alt="member image">
+          <ul class="info">
+            <li><i class="fas fa-info-circle fa-3x"></i></li>
+          </ul>
+        </div>
         <h4 class="member-name">${member.name}</h4>
         <span class="member-role">${member.brief}</span>
       </div>

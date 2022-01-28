@@ -171,9 +171,56 @@ h3{
 #membersContainer,#publicationsContainer{
     width: 100%;
 }
-.memberImage{
+.pic{
     border-radius: 50%; 
     width: 168px;
+    overflow: hidden;
+    position: relative;
+}
+.pic::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.member .info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease 0s; 
+}
+.member:hover .pic::after, .member:hover .info{
+    opacity: 1;
+    cursor: pointer;
+}
+.info li{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.info li i{
+    display: block;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.5s ease 0s;
+}
+.memberImage{
+    border-radius: 50%; 
+    width: 100%;
 }
 .institutionImage{
     width: 35%;
@@ -205,6 +252,10 @@ h3{
 }
 
 .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     flex-basis: 33%;
     padding: 24px;
@@ -237,11 +288,7 @@ h3{
 .accordion-button{
     font-weight: bold;
 }
-footer{
-    background-image: url("./images/gradient.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+  
 
 
 @media (max-width: 1200px){

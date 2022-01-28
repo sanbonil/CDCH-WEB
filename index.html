@@ -10,13 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/simbol.svg">
+    <script src="https://kit.fontawesome.com/b99e53c9e9.js" crossorigin="anonymous"></script>
     <title>Reusemp3</title>
 </head>
 <body onload="render()">
     <header>
         <nav id="navBar" class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
-                <a type="button" class="navbar-brand " data-bs-toggle="modal" data-bs-target="#infoModal">
+                <a class="navbar-brand ">
                     <img id="navLogo" src="./images/logoHorizontal.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" id="offcanvasButton" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,14 +39,23 @@
                         <li class="nav-item">
                             <a class="nav-link"  href="#membersContainer">Members</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link"  href="#publicationsContainer">Publications</a>
-                        </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Supporters
+                            Publications & News
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="#">Conferences</a></li>
+                            <li><a class="dropdown-item" href="#publicationsContainer">Publications</a></li>
+                            <li><a class="dropdown-item" href="#">Job offers</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Supporters
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                            <li><a class="dropdown-item" href="#">Related projects</a></li>
                             <li><a class="dropdown-item" href="#advisoryContainer">Advisory board</a></li>
                             <li><a class="dropdown-item" href="#authoritiesContainer">Authorities & utilities</a></li>
                             <li><a class="dropdown-item" href="#universitiesContainer">Universities</a></li>
@@ -61,29 +71,6 @@
                 </div>
               </div>
         </nav>
-        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;">General Information</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p style="text-align: justify;">
-                  <b>FUNDING AGENCY:</b> Spanish State Research Agency (AEI), Code: PID2020-115456RB-I00<br><br>
-                  <b>DURATION:</b> 2021-2024<br><br>
-                  <b>COORDINATOR:</b> Institut Català de Recerca de l'Aigua (ICRA)<br><br>
-                  <b>LEAD RESEARCHERS:</b> Dr. Gianluigi Buttiglieri & Dra. Sara Rodriguez-Mozaz<br><br>
-                  <b>OTHER RESEARCHERS:</b> Dr. Joaquim Comas Matas, Dr. Eusebi Calle Ortega (UdG), Diana Alvarez-Muñoz<br><br>
-                  <b>BUDGET:</b> 144.000 €
-                </p>
-              </div>
-              <div class="modal-footer">
-                <a href="https://www.icra.cat/projects/reusemp3-integrating-nature-based-water/197" target="_blank">Project information</a>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                 <h5 id="offcanvasRightLabel">MENU</h5>
@@ -113,7 +100,19 @@
                     <a class="nav-link canvas-links" href="#membersContainer">Members</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#">Conferences</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link canvas-links"  href="#publicationsContainer">Publications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#">Job offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link canvas-links"  href="#">Related projects</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link canvas-links"  href="#advisoryContainer">Advisory board</a>
@@ -163,6 +162,26 @@
                   <b>Microplastics</b> and their additives are also monitored in these studies, which include <b>lab-scale experiments</b> under controlled conditions with real grey/wastewater, as well as <b>field studies</b>.<br> 
                   All the data collected during the project will also allow the development of innovative <b>decision support tools for water management</b>. 
                 </p>
+            </div>
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;">General Information</h5>
+                </div>
+                <div class="modal-body">
+                  <p style="text-align: justify;">
+                    <b>FUNDING AGENCY:</b> Spanish State Research Agency (AEI), Code: PID2020-115456RB-I00<br><br>
+                    <b>DURATION:</b> 2021-2024<br><br>
+                    <b>COORDINATOR:</b> Institut Català de Recerca de l'Aigua (ICRA)<br><br>
+                    <b>LEAD RESEARCHERS:</b> Dr. Gianluigi Buttiglieri & Dra. Sara Rodriguez-Mozaz<br><br>
+                    <b>OTHER RESEARCHERS:</b> Dr. Joaquim Comas Matas, Dr. Eusebi Calle Ortega (UdG), Diana Alvarez-Muñoz<br><br>
+                    <b>BUDGET:</b> 144.000 €
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://www.icra.cat/projects/reusemp3-integrating-nature-based-water/197" target="_blank">Project information</a>
+                </div>
+              </div>
             </div>
         </section>
         <section class="sectionContainer" id="workPackages">
@@ -303,9 +322,6 @@
             </div>
         </section>
     </section>
-    <footer>
-
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./members.js"></script>
