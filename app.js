@@ -1,12 +1,3 @@
-/*Language popover*/
-
-document.getElementById("popoverButton").setAttribute("data-bs-content","<ul id='languageList'><li class='languageElement'>English</li><li class='languageElement'>Spanish</li><li class='languageElement'>Catalan</li></ul>")
-
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
 
 /*Offcanvas actions*/
 document.addEventListener("DOMContentLoaded", function(){
@@ -66,6 +57,17 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+$(function(){
+  $('.translate').click(function(){
+    var lang = $(this).attr('id');
+    document.getElementById('actualLanguage').src = "./images/"+lang+".svg"
+    
+    $('.lang').each(function(index,element){
+      $(this).text(arrLang[lang][$(this).attr('key')])
+    });
+  });
+});
+
 //render all the dynamic components of the page
 function render(){
   //Members rendering
@@ -120,7 +122,7 @@ function render(){
   if(conferences.length>0){
     conferencesContainer.style.display="flex"
     conferencesContainer.innerHTML+=`
-    <h3>CONFERENCES</h3>
+    <h3 class="lang" key="h3Conferences">CONFERENCES</h3>
     <div class="container" id="conferences">
 
     </div>
@@ -139,7 +141,7 @@ function render(){
   if(publications.length>0){
     publicationsContainer.style.display="flex"
     publicationsContainer.innerHTML+=`
-    <h3>PUBLICATIONS</h3>
+    <h3 class="lang" key="h3Publications">PUBLICATIONS</h3>
     <div class="accordion accordion-flush" id="accordionFlushExample">
 
     </div>
@@ -170,7 +172,7 @@ function render(){
   if(jobOffers.length>0){
     offersContainer.style.display="flex"
     offersContainer.innerHTML+=`
-    <h3>JOB OFFERS</h3>
+    <h3 class="lang" key="h3JobOffers">JOB OFFERS</h3>
     <div class="container" id="jobs">
 
     </div>
@@ -238,3 +240,4 @@ function render(){
     `
   }
 }
+

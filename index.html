@@ -26,46 +26,51 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul id="navLinks" class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle lang" key="project"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Project
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#container">Overview</a></li>
-                            <li><a class="dropdown-item" href="#workPackages">Work packages</a></li>
-                            <li><a class="dropdown-item" href="#fieldSites">Field sites</a></li>
-                            <li><a class="dropdown-item" href="#mesocosmStudies">Mesocosm studies</a></li>
+                            <li><a class="dropdown-item lang" key="overview" href="#container">Overview</a></li>
+                            <li><a class="dropdown-item lang" key="packages" href="#workPackages">Work packages</a></li>
+                            <li><a class="dropdown-item lang" key="field" href="#fieldSites">Field sites</a></li>
+                            <li><a class="dropdown-item lang" key="mesocosm" href="#mesocosmStudies">Mesocosm studies</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="#membersContainer">Members</a>
+                            <a class="nav-link lang" key="members"  href="#membersContainer">Members</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle lang" key="publis&news"  id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Publications & News
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                            <li><a class="dropdown-item" href="#newsContainer">News</a></li>
-                            <li><a class="dropdown-item" href="#conferencesContainer">Conferences</a></li>
-                            <li><a class="dropdown-item" href="#publicationsContainer">Publications</a></li>
-                            <li><a class="dropdown-item" href="#jobContainer">Job offers</a></li>
+                            <li><a class="dropdown-item lang" key="news" href="#newsContainer">News</a></li>
+                            <li><a class="dropdown-item lang" key="conferences" href="#conferencesContainer">Conferences</a></li>
+                            <li><a class="dropdown-item lang" key="publications" href="#publicationsContainer">Publications</a></li>
+                            <li><a class="dropdown-item lang" key="jobOffers" href="#jobContainer">Job offers</a></li>
                           </ul>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle lang" key="supporters"  id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Supporters
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-                            <li><a class="dropdown-item" href="#projectsContainer">Related projects</a></li>
-                            <li><a class="dropdown-item" href="#advisoryContainer">Advisory board</a></li>
-                            <li><a class="dropdown-item" href="#authoritiesContainer">Authorities & utilities</a></li>
-                            <li><a class="dropdown-item" href="#universitiesContainer">Universities</a></li>
-                            <li><a class="dropdown-item" href="#techCompaniesContainer">Tech. companies</a></li>
+                            <li><a class="dropdown-item lang" key="relatedProjects" href="#projectsContainer">Related projects</a></li>
+                            <li><a class="dropdown-item lang" key="advisoryBoard" href="#advisoryContainer">Advisory board</a></li>
+                            <li><a class="dropdown-item lang" key="authorites" href="#authoritiesContainer">Authorities & utilities</a></li>
+                            <li><a class="dropdown-item lang" key="universities" href="#universitiesContainer">Universities</a></li>
+                            <li><a class="dropdown-item lang" key="techCompanies" href="#techCompaniesContainer">Tech. companies</a></li>
                           </ul>
                         </li>
-                        <li class="nav-item">
-                          <button id="popoverButton" type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true">
-                            <img src="images/en.svg" width="16" height="11" loading="lazy">      
-                          </button>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img id="actualLanguage" src="images/en.svg" width="16" height="11" loading="lazy">      
+                          </a>
+                          <ul class="dropdown-menu" id="language-menu" aria-labelledby="navbarDropdownMenuLink4">
+                            <li><a class='dropdown-item translate' id='en'><img src="images/en.svg" width="22" height="15" loading="lazy"></a></li>
+                            <li><a class='dropdown-item translate' id='es'><img src="images/es.svg" width="22" height="15" loading="lazy"></a></li>
+                            <li><a class='dropdown-item translate' id='cat'><img src="images/cat.svg" width="22" height="15" loading="lazy"></a></li>
+                          </ul>
                         </li>
                     </ul>
                 </div>
@@ -73,65 +78,65 @@
         </nav>
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">MENU</h5>
+                <h5 id="offcanvasRightLabel" class="lang" key="menu">MENU</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item" id="languageContainer">
-                  <img src="images/en.svg" width="22" height="15" loading="lazy">
-                  <img style="margin:0px 10px 0px 10px" src="images/es.svg" width="22" height="15" loading="lazy">    
-                  <img src="images/cat.svg" width="22" height="15" loading="lazy">
+                  <img class="translate" id="en" src="images/en.svg" width="22" height="15" loading="lazy">
+                  <img class="translate" id="es" style="margin:0px 10px 0px 10px" src="images/es.svg" width="22" height="15" loading="lazy">    
+                  <img class="translate" id="cat" src="images/cat.svg" width="22" height="15" loading="lazy">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link canvas-links" href="#container">Project Overview</a>
+                    <a class="nav-link canvas-links lang" key="overview" href="#container">Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link canvas-links" href="#workPackages">Work packages</a>
+                    <a class="nav-link canvas-links lang" key="packages" href="#workPackages">Work packages</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links" href="#fieldSites">Field sites</a>
+                  <a class="nav-link canvas-links lang" key="field" href="#fieldSites">Field sites</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link canvas-links" href="#mesocosmStudies">Mesocosm studies</a>
+                    <a class="nav-link canvas-links lang" key="mesocosm" href="#mesocosmStudies">Mesocosm studies</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link canvas-links" href="#membersContainer">Members</a>
+                    <a class="nav-link canvas-links lang" key="members" href="#membersContainer">Members</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#newsContainer">News</a>
+                  <a class="nav-link canvas-links lang" key="news"  href="#newsContainer">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#conferencesContainer">Conferences</a>
+                  <a class="nav-link canvas-links lang" key="conferences" href="#conferencesContainer">Conferences</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#publicationsContainer">Publications</a>
+                  <a class="nav-link canvas-links lang" key="publications"  href="#publicationsContainer">Publications</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#jobContainer">Job offers</a>
+                  <a class="nav-link canvas-links lang" key="jobOffers"  href="#jobContainer">Job offers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#projectsContainer">Related projects</a>
+                  <a class="nav-link canvas-links lang" key="relatedProjects"  href="#projectsContainer">Related projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#advisoryContainer">Advisory board</a>
+                  <a class="nav-link canvas-links lang" key="advisoryBoard" href="#advisoryContainer">Advisory board</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#authoritiesContainer">Authorities & utilities</a>
+                  <a class="nav-link canvas-links lang" key="authorities" href="#authoritiesContainer">Authorities & utilities</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#universitiesContainer">Universities</a>
+                  <a class="nav-link canvas-links lang" key="universities"  href="#universitiesContainer">Universities</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link canvas-links"  href="#techCompaniesContainer">Tech. companies</a>
+                  <a class="nav-link canvas-links lang" key="techCompanies" href="#techCompaniesContainer">Tech. companies</a>
                 </li>
               </ul>
             </div>
         </div>
         <div id="info">
             <img id="simbol" src="./images/whiteLogo.png" alt="Logo">
-            <h2 id="welcomeInfo">Integrating nature-based water Reuse
+            <h2 id="welcomeInfo" class="lang" key="subtitle">Integrating nature-based water Reuse
                 strategies with advanced Monitoring
                 of the Presence and impact of
                 MicroPollutants and MicroPlastics.</h2>
@@ -145,7 +150,7 @@
           <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
         <section class="sectionContainer">
-            <h3>PROJECT OVERVIEW</h3>
+            <h3 class="lang" key="h3ProjectOverview">PROJECT OVERVIEW</h3>
             <div class="content">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="10000">
                     <div class="carousel-inner">
@@ -166,26 +171,26 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;">General Information</h5>
+                  <h5 class="modal-title lang" key="generalInfo" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;">General Information</h5>
                 </div>
                 <div class="modal-body">
                   <p style="text-align: justify;">
-                    <b>FUNDING AGENCY:</b> Spanish State Research Agency (AEI), Code: PID2020-115456RB-I00<br><br>
-                    <b>DURATION:</b> 2021-2024<br><br>
-                    <b>COORDINATOR:</b> Institut Català de Recerca de l'Aigua (ICRA)<br><br>
-                    <b>LEAD RESEARCHERS:</b> Dr. Gianluigi Buttiglieri & Dra. Sara Rodriguez-Mozaz<br><br>
-                    <b>OTHER RESEARCHERS:</b> Dr. Joaquim Comas Matas, Dr. Eusebi Calle Ortega (UdG), Diana Alvarez-Muñoz<br><br>
-                    <b>BUDGET:</b> 144.000 €
+                    <b class="lang" key="fundingAgency">FUNDING AGENCY:</b> <span class="lang" key="fundingInfo"> Spanish State Research Agency (AEI), Code: PID2020-115456RB-I00</span><br><br>
+                    <b class="lang" key="duration">DURATION:</b> 2021-2024<br><br>
+                    <b class="lang" key="coordinator">COORDINATOR:</b> Institut Català de Recerca de l'Aigua (ICRA)<br><br>
+                    <b class="lang" key="leadResearchers">LEAD RESEARCHERS:</b> Dr. Gianluigi Buttiglieri & Dra. Sara Rodriguez-Mozaz<br><br>
+                    <b class="lang" key="otherResearchers">OTHER RESEARCHERS:</b> Dr. Joaquim Comas Matas, Dr. Eusebi Calle Ortega (UdG), Diana Alvarez-Muñoz<br><br>
+                    <b class="lang" key="budget">BUDGET:</b> 144.000 €
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <a href="https://www.icra.cat/projects/reusemp3-integrating-nature-based-water/197" target="_blank">Project information</a>
+                  <a class="lang" key="linkInfoProjecte" href="https://www.icra.cat/projects/reusemp3-integrating-nature-based-water/197" target="_blank">Project information</a>
                 </div>
               </div>
             </div>
         </section>
         <section class="sectionContainer" id="workPackages">
-          <h3>WORK PACKAGES</h3>
+          <h3 class="lang" key="h3WorkPackages">WORK PACKAGES</h3>
           <div class="column-content">
             <img src="./images/workpackages.png" class="d-block w-100" alt="...">
             <p style="margin: 0; margin-top: 30px ;font-size: 1.05rem;">
@@ -199,7 +204,7 @@
           </div>
         </section>
         <section class="sectionContainer" id="fieldSites">
-          <h3>FIELD SITES</h3>
+          <h3 class="lang" key="h3FieldSites">FIELD SITES</h3>
           <div class="column-content" id="fieldContent" style="margin-top: 30px;">
             <img id="fieldSitesImage" src="./images/fieldSites.png" class="d-block" alt="...">
             <p style="margin: 0; margin-top: 30px ;font-size: 1.05rem;">
@@ -212,7 +217,7 @@
           </div>
         </section>
         <section class="sectionContainer" id="mesocosmStudies">
-          <h3>MESOCOSM STUDIES</h3>
+          <h3 class="lang" key="h3Mesocosm">MESOCOSM STUDIES</h3>
           <div class="column-content" id="mesocosmContent" style="margin-top: 30px;">
             <img id="mesocosmImage" src="./images/mesocosm.JPG" class="d-block" alt="...">
             <p style="flex:1;margin: 0; margin-top: 20px; font-size: 1.05rem;">
@@ -223,7 +228,7 @@
           </div>
         </section>
         <section class="sectionContainer" id="membersContainer">
-            <h3>MEMBERS</h3>
+            <h3 class="lang" key="h3Members">MEMBERS</h3>
             <div class="container">
                 <div class="gridLayout" id="memberGroup">
                   
@@ -231,7 +236,7 @@
             </div>
         </section>
         <section class="sectionContainer" id="newsContainer">
-          <h3>NEWS</h3>
+          <h3 class="lang" key="h3News">NEWS</h3>
           <div class="container" id="news">
 
           </div>
@@ -246,19 +251,19 @@
           
         </section>
         <section class="sectionContainer" id="projectsContainer">
-          <h3>RELATED PROJECTS</h3>
+          <h3 class="lang" key="h3RelatedProjects">RELATED PROJECTS</h3>
           <div class="container" id="relatedProjects">
             
           </div>
         </section>
         <section class="sectionContainer" id="advisoryContainer">
-          <h3>ADVISORY BOARD</h3>
+          <h3 class="lang" key="h3Advisory">ADVISORY BOARD</h3>
           <div class="container" id="advisoryBoard">
       
           </div>
         </section>
         <section class="sectionContainer" id="authoritiesContainer">
-          <h3>AUTHORITIES & UTILITIES</h3>
+          <h3 class="lang" key="h3Authorities">AUTHORITIES & UTILITIES</h3>
           <div class="container">
               <div class="gridLayout" id="authoritiesGroup">
                 
@@ -266,7 +271,7 @@
             </div>
         </section>
         <section class="sectionContainer" id="universitiesContainer">
-          <h3>UNIVERSITIES</h3>
+          <h3 class="lang" key="h3Universities">UNIVERSITIES</h3>
           <div class="container">
               <div class="gridLayout" id="universitiesGroup">
                 
@@ -274,7 +279,7 @@
             </div>
         </section>
         <section class="sectionContainer" id="techCompaniesContainer">
-          <h3>TECH. COMPANIES & OTHERS</h3>
+          <h3 class="lang" key="h3techCompanies">TECH. COMPANIES & OTHERS</h3>
           <div class="container">
               <div class="gridLayout" id="companiesGroup">
                 
@@ -289,7 +294,7 @@
       <div class="container">
         <div class="row">
           <div id="aboutFooter" class="col-sm-12 col-md-6">
-            <h6>About</h6>
+            <h6 class="lang" key="about">About</h6>
             <hr>
             <p class="text-justify">The aim of the ReUseMP3 project is to explore the feasibility of using nature-based solutions (NBS) with direct reuse purposes- including irrigation of crops for food production in cities in a more sustainable way.
               A range of analytical methodologies including target analysis of known emerging pollutants but also a wide-scope suspect and non-target analysis are applied to provide a better overview of the presence and removal of substances of emerging concern along the water reuse cycle as well as their impact to the environment and human health. 
@@ -297,26 +302,26 @@
           </div>
 
           <div class="col-xs-12 col-md-4">
-            <h6>Quick Links</h6>
+            <h6 class="lang" key="quickLinks">Quick Links</h6>
             <hr>
             <div style="display: flex; justify-content: space-between;">
               <ul class="footer-links">
-                <li><a href="#container">Overview</a></li>
-                <li><a href="#workPackages">Work packages</a></li>
-                <li><a href="#fieldSites">Field sites</a></li>
-                <li><a href="#mesocosmStudies">Mesocosm studies</a></li>
-                <li><a href="#membersContainer">Members</a></li>
-                <li><a href="#newsContainer">News</a></li>
-                <li><a href="#conferencesContainer">Conferences</a></li>
+                <li><a class="lang" key="overview" href="#container">Overview</a></li>
+                <li><a class="lang" key="packages" href="#workPackages">Work packages</a></li>
+                <li><a class="lang" key="field" href="#fieldSites">Field sites</a></li>
+                <li><a class="lang" key="mesocosm" href="#mesocosmStudies">Mesocosm studies</a></li>
+                <li><a class="lang" key="members" href="#membersContainer">Members</a></li>
+                <li><a class="lang" key="news" href="#newsContainer">News</a></li>
+                <li><a class="lang" key="conferences" href="#conferencesContainer">Conferences</a></li>
               </ul>
               <ul class="footer-links">
-                <li><a href="#publicationsContainer">Publications</a></li>
-                <li><a href="#jobContainer">Job offers</a></li>
-                <li><a href="#projectsContainer">Related Projects</a></li>
-                <li><a href="#advisoryContainer">Advisory board</a></li>
-                <li><a href="#authoritiesContainer">Authorities</a></li>
-                <li><a href="#universitiesContainer">Universities</a></li>
-                <li><a href="#techCompaniesContainer">Tech.companies</a></li>
+                <li><a class="lang" key="publications" href="#publicationsContainer">Publications</a></li>
+                <li><a class="lang" key="jobOffers" href="#jobContainer">Job offers</a></li>
+                <li><a class="lang" key="relatedProjects" href="#projectsContainer">Related Projects</a></li>
+                <li><a class="lang" key="advisoryBoard" href="#advisoryContainer">Advisory board</a></li>
+                <li><a class="lang" key="authorities" href="#authoritiesContainer">Authorities</a></li>
+                <li><a class="lang" key="universities" href="#universitiesContainer">Universities</a></li>
+                <li><a class="lang" key="techCompanies" href="#techCompaniesContainer">Tech.companies</a></li>
               </ul>
             </div>  
           </div>
@@ -344,9 +349,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="./dynamicObjects.js"></script>
-    <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./dynamicObjects.js"></script>
+    <script src="./languages.js"></script>
+    <script src="./app.js"></script>
     <script src="./footer.js"></script>
 </body>
 </html>

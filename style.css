@@ -66,6 +66,10 @@ h2{
 h3{
     font-weight: bold;
     color: #3267b2;
+    text-align: center
+}
+.translate:hover{
+    cursor: pointer;
 }
 
 .navbar{
@@ -85,6 +89,10 @@ h3{
 }
 .dropdown-item{
     color: black !important;
+    font-size: 15px;
+}
+#language-menu{
+    min-width: 30px !important;
 }
 
 .canvas-links{
