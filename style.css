@@ -402,7 +402,9 @@ h3{
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  display: flex;
+  justify-content: space-around;
 }
 .social-icons li
 {

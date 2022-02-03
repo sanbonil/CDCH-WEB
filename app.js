@@ -1,3 +1,5 @@
+var actualLanguage = "en";
+
 
 /*Offcanvas actions*/
 document.addEventListener("DOMContentLoaded", function(){
@@ -61,17 +63,21 @@ $(function(){
   $('.translate').click(function(){
     var lang = $(this).attr('id');
     document.getElementById('actualLanguage').src = "./images/"+lang+".svg"
-    
+    actualLanguage=lang;
+  
     $('.lang').each(function(index,element){
       $(this).text(arrLang[lang][$(this).attr('key')])
     });
+    render();
   });
 });
 
 //render all the dynamic components of the page
 function render(){
+  console.log(actualLanguage)
   //Members rendering
   const memberContiner = document.getElementById("memberGroup")
+  memberContiner.innerHTML=""
   for(let member of members){
     memberContiner.innerHTML+=`
       <div class="member">
@@ -95,12 +101,12 @@ function render(){
             </div>
             <div class="modal-body">
               <p style="text-align: justify;">
-                ${member.description}
+                ${actualLanguage==="en"?`${member.descriptionEN}`:actualLanguage==="es"?`${member.descriptionES}`:actualLanguage==="cat"&&`${member.descriptionCAT}`}
               </p>
             </div>
             
-            <div class="modal-footer">
-              ${member.link!==""?`<a href="${member.link}" target="_blank">More information</a>`:``}
+            <div class="modal-footer" >
+              ${member.link!==""?`<a class="lang" key="moreInfo" href="${member.link}" target="_blank">More information</a>`:``}
             </div>
           </div>
         </div>
@@ -113,7 +119,7 @@ function render(){
   for(let noticia of news){
     newsContainer.innerHTML+=`
     <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${noticia.brief!==""?`${noticia.brief}<br>`:``}<a href="${noticia.link}" target="_blank">More information</a></p>
+    <p>${noticia.brief!==""?`${noticia.brief}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">More information</a></p>
     `
   }
 
@@ -157,7 +163,7 @@ function render(){
         </h3>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">${publication.brief}</div>
-          <a class="accordion-body" target="_blank" href="${publication.link}">PUBLICATION LINK</a>
+          <a class="lang" key="publiLink" class="accordion-body" target="_blank" href="${publication.link}">PUBLICATION LINK</a>
         </div>
       </div>
       `
