@@ -64,11 +64,12 @@ $(function(){
     var lang = $(this).attr('id');
     document.getElementById('actualLanguage').src = "./images/"+lang+".svg"
     actualLanguage=lang;
+    render();
   
     $('.lang').each(function(index,element){
       $(this).text(arrLang[lang][$(this).attr('key')])
     });
-    render();
+    
   });
 });
 
@@ -76,10 +77,10 @@ $(function(){
 function render(){
   console.log(actualLanguage)
   //Members rendering
-  const memberContiner = document.getElementById("memberGroup")
-  memberContiner.innerHTML=""
+  const memberContainer = document.getElementById("memberGroup")
+  memberContainer.innerHTML=""
   for(let member of members){
-    memberContiner.innerHTML+=`
+    memberContainer.innerHTML+=`
       <div class="member">
         <div class="pic" data-bs-toggle="modal" data-bs-target="#member${member.id}Modal">
           <img  class="memberImage" src="./images/member${member.id}.png" alt="member image">
@@ -87,8 +88,8 @@ function render(){
             <li><i class="fas fa-info-circle fa-3x"></i></li>
           </ul>
         </div>
-        <h4 class="member-name">${member.name}</h4>
-        <span class="member-role">${member.brief}</span>
+        <h4 class="member-name">${actualLanguage==="en"?`${member.nameEN}`:`${member.nameES}`}</h4>
+        <span class="member-role">${actualLanguage==="en"?`${member.briefEN}`:actualLanguage==="es"?`${member.briefES}`:actualLanguage==="cat"&&`${member.briefCAT}`}</span>
       </div>
 
       <div class="modal fade" id="member${member.id}Modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -96,7 +97,7 @@ function render(){
           <div class="modal-content">
             <div class="modal-header">
               <img class="avatar" src="./images/member${member.id}.png" alt="member image">
-              <h5 class="modal-title" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;margin-left: 20px;">${member.name}</h5>
+              <h5 class="modal-title" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;margin-left: 20px;">${actualLanguage==="en"?`${member.nameEN}`:`${member.nameES}`}</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -116,10 +117,11 @@ function render(){
 
   //News rendering
   const newsContainer = document.getElementById("news")
+  newsContainer.innerHTML=""
   for(let noticia of news){
     newsContainer.innerHTML+=`
     <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${noticia.brief!==""?`${noticia.brief}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">More information</a></p>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">More information</a></p>
     `
   }
 
@@ -145,6 +147,7 @@ function render(){
   //Publications rendering
   const publicationsContainer = document.getElementById("publicationsContainer")
   if(publications.length>0){
+    publicationsContainer.innerHTML=""
     publicationsContainer.style.display="flex"
     publicationsContainer.innerHTML+=`
     <h3 class="lang" key="h3Publications">PUBLICATIONS</h3>
@@ -176,6 +179,7 @@ function render(){
   //JobOffers rendering
   const offersContainer = document.getElementById("jobContainer")
   if(jobOffers.length>0){
+    offersContainer.innerHTML=""
     offersContainer.style.display="flex"
     offersContainer.innerHTML+=`
     <h3 class="lang" key="h3JobOffers">JOB OFFERS</h3>
@@ -194,12 +198,14 @@ function render(){
 
   //Related Projects rendering
   const projectsContainer = document.getElementById("projectsContainer")
+  projectsContainer.innerHTML=""
+  projectsContainer.innerHTML+=`<h3 style="margin-bottom:30px" class="lang" key="h3RelatedProjects">RELATED PROJECTS</h3>`
   for(let project of relatedProjects){
     projectsContainer.innerHTML+=`
     <div class="card w-75" style="margin-bottom:30px">
       <div class="card-body">
         <h5 class="card-title"><b>${project.name}</b></h5>
-        <p class="card-text">${project.brief}</p>
+        <p class="card-text">${actualLanguage==="en"?`${project.briefEN}`:actualLanguage==="es"?`${project.briefES}`:actualLanguage==="cat"&&`${project.briefCAT}`}</p>
         ${project.links.map(link=>`<a href="${link}" class="card-link">${link}</a>`)}
       </div>
     </div>
@@ -209,15 +215,17 @@ function render(){
 
   //Advisory Board rendering
   const advisoryContainer = document.getElementById("advisoryBoard")
+  advisoryContainer.innerHTML=""
   for(let advisor of advisoryBoard){
     advisoryContainer.innerHTML+=`
     <h4 class="member-name advisor">${advisor.name}</h4>
-    <p><b>${advisor.location}</b> <br> ${advisor.brief}<br><a href="${advisor.link}" target="_blank">More information</a></p>
+    <p><b>${actualLanguage==="en"?`${advisor.locationEN}`:actualLanguage==="es"?`${advisor.locationES}`:actualLanguage==="cat"&&`${advisor.locationCAT}`}</b> <br> ${actualLanguage==="en"?`${advisor.briefEN}`:actualLanguage==="es"?`${advisor.briefES}`:actualLanguage==="cat"&&`${advisor.briefCAT}`}<br><a class="lang" key="moreInfo" href="${advisor.link}" target="_blank">More information</a></p>
     `
   }
 
   //Authorities rendering
   const authoritiesContainer = document.getElementById("authoritiesGroup")
+  authoritiesContainer.innerHTML=""
   for(let i=1;i<6;i++){
     authoritiesContainer.innerHTML+=`
     <img class="institutionImage" src="./images/authority${i}.png" alt="authority image">
@@ -226,6 +234,7 @@ function render(){
 
   //Universities rendering
   const universitiesContainer = document.getElementById("universitiesGroup")
+  universitiesContainer.innerHTML=""
   for(let i=1;i<5;i++){
     universitiesContainer.innerHTML+=`
     <img class="institutionImage" src="./images/university${i}.png" alt="university image">
@@ -235,11 +244,13 @@ function render(){
   //Companies rendering
   const companiesContainer = document.getElementById("companiesGroup")
   const othersContainer = document.getElementById("othersGroup")
+  companiesContainer.innerHTML=""
   for(let i=1;i<4;i++){
     companiesContainer.innerHTML+=`
     <img class="companyImage" src="./images/company${i}.png" alt="company image">
     `
   }
+  othersContainer.innerHTML=""
   for(let i=4;i<6;i++){
     othersContainer.innerHTML+=`
     <img class="companyImage" src="./images/company${i}.png" alt="company image">
