@@ -1,3 +1,4 @@
+//GLOBAL VARIABLE
 var actualLanguage = "en";
 
 
@@ -41,13 +42,8 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 800 ||document.documentElement.scrollTop > 800) {
     mybutton.style.display = "block";
-    /*if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-      mybutton.style.bottom= "";
-    }
-    else{
-      mybutton.style.bottom= "20px";
-    }*/
-  } else {
+  } 
+  else {
     mybutton.style.display = "none";
   }
 }
@@ -59,12 +55,13 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+// Translation function
 $(function(){
   $('.translate').click(function(){
     var lang = $(this).attr('id');
     document.getElementById('actualLanguage').src = "./images/"+lang+".svg"
     actualLanguage=lang;
-    render();
+    renderDynamicObjects();
   
     $('.lang').each(function(index,element){
       $(this).text(arrLang[lang][$(this).attr('key')])
@@ -73,9 +70,7 @@ $(function(){
   });
 });
 
-//render all the dynamic components of the page
-function render(){
-  console.log(actualLanguage)
+function renderDynamicObjects(){
   //Members rendering
   const memberContainer = document.getElementById("memberGroup")
   memberContainer.innerHTML=""
@@ -125,19 +120,22 @@ function render(){
     `
   }
 
+
   //Conferences rendering
   const conferencesContainer = document.getElementById("conferencesContainer")
   if(conferences.length>0){
-    conferencesContainer.style.display="flex"
-    conferencesContainer.innerHTML+=`
-    <h3 class="lang" key="h3Conferences">CONFERENCES</h3>
-    <div class="container" id="conferences">
-
-    </div>
-    `
-    const conferencesContent = document.getElementById("conferences")
+    conferencesContainer.innerHTML=""
+    conferencesContainer.innerHTML+=`<h3 style="margin-bottom:30px" class="lang" key="h3Conferences">CONFERENCES</h3>`
     for(let conference of conferences){
-      conferencesContent.innerHTML+=``
+      conferencesContainer.innerHTML+=`
+      <div class="card w-75" style="margin-bottom:30px">
+        <div class="card-body">
+          <h5 class="card-title"><b>${conference.name}</b></h5>
+          <p class="card-text">${actualLanguage==="en"?`${conference.briefEN}`:actualLanguage==="es"?`${conference.briefES}`:actualLanguage==="cat"&&`${conference.briefCAT}`}</p>
+          <a href="${conference.link}" class="card-link lang" key="conferenceLink">CONFERENCE LINK</a>
+        </div>
+      </div>
+      `
     }
   }
   else{
@@ -156,40 +154,54 @@ function render(){
     </div>
     `
     const publicationsContent = document.getElementById("accordionFlushExample")
+    let x = 0;
     for(let publication of publications){
       publicationsContent.innerHTML+=`
       <div class="accordion-item">
-        <h3 class="accordion-header" id="flush-headingOne">
-          <button style="border:1px solid black" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <h3 class="accordion-header" id="flush-heading${x}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${x}" aria-expanded="false" aria-controls="flush-collapseOne">
             ${publication.name}
           </button>
         </h3>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">${publication.brief}</div>
+        <div id="flush-collapse${x}" class="accordion-collapse collapse" aria-labelledby="flush-heading${x}" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+          <p>${actualLanguage==="en"?`${publication.briefEN}`:actualLanguage==="es"?`${publication.briefES}`:actualLanguage==="cat"&&`${publication.briefCAT}`}</p>
           <a class="lang" key="publiLink" class="accordion-body" target="_blank" href="${publication.link}">PUBLICATION LINK</a>
+          </div>
         </div>
       </div>
       `
+      x++;
     }
   }
   else{
     publicationsContainer.style.display="none"
   }
-  
+
   //JobOffers rendering
   const offersContainer = document.getElementById("jobContainer")
   if(jobOffers.length>0){
     offersContainer.innerHTML=""
     offersContainer.style.display="flex"
     offersContainer.innerHTML+=`
-    <h3 class="lang" key="h3JobOffers">JOB OFFERS</h3>
-    <div class="container" id="jobs">
+    <h3 style="margin-bottom:30px" class="lang" key="h3JobOffers">JOB OFFERS</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="jobs">
 
     </div>
     `
     const jobsContent = document.getElementById("jobs")
     for(let job of jobOffers){
-      jobsContent.innerHTML+=``
+      jobsContent.innerHTML+=`
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">${job.name}</h5>
+            <p class="card-text">${actualLanguage==="en"?`${job.briefEN}`:actualLanguage==="es"?`${job.briefES}`:actualLanguage==="cat"&&`${job.briefCAT}`}</p>
+            <a href="${job.link}" class="card-link lang" key="offerLink">JOB OFFER LINK</a>
+          </div>
+        </div>
+      </div>      
+      `
     }
   }
   else{
@@ -210,7 +222,6 @@ function render(){
       </div>
     </div>
     `
-    
   }
 
   //Advisory Board rendering
@@ -222,7 +233,9 @@ function render(){
     <p><b>${actualLanguage==="en"?`${advisor.locationEN}`:actualLanguage==="es"?`${advisor.locationES}`:actualLanguage==="cat"&&`${advisor.locationCAT}`}</b> <br> ${actualLanguage==="en"?`${advisor.briefEN}`:actualLanguage==="es"?`${advisor.briefES}`:actualLanguage==="cat"&&`${advisor.briefCAT}`}<br><a class="lang" key="moreInfo" href="${advisor.link}" target="_blank">More information</a></p>
     `
   }
+}
 
+function renderSupporters(){
   //Authorities rendering
   const authoritiesContainer = document.getElementById("authoritiesGroup")
   authoritiesContainer.innerHTML=""
@@ -256,5 +269,11 @@ function render(){
     <img class="companyImage" src="./images/company${i}.png" alt="company image">
     `
   }
+}
+
+//render all the dynamic components of the page and the supporters
+function render(){
+  renderDynamicObjects()
+  renderSupporters()
 }
 

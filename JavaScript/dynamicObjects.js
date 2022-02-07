@@ -165,16 +165,65 @@ const advisoryBoard=[
 ]
 
 const publications=[
-    //name, brief, link
+    //name, briefEN,briefES,briefCAT, link
+    {
+        name:"Publication 1",
+        briefEN:"This is the first publication",
+        briefES:"Esta es la primera publicación",
+        briefCAT:"Aquesta és la primera publicació",
+        link:"",
+    },
+    {
+        name:"Publication 2",
+        briefEN:"This is the second publication",
+        briefES:"Esta es la segunda publicación",
+        briefCAT:"Aquesta és la segona publicació",
+        link:"",
+    },
 ]
 
 const conferences=[
-    //name,brief,link
+    //name, briefEN,briefES,briefCAT, link
+    {
+        name:"Conference 1",
+        briefEN:"This is the first conference",
+        briefES:"Esta es la primera conferencia",
+        briefCAT:"Aquesta és la primera conferència",
+        link:"",
+    },
+    {
+        name:"Conference 2",
+        briefEN:"This is the second conference",
+        briefES:"Esta es la segunda conferencia",
+        briefCAT:"Aquesta és la segona conferència",
+        link:"",
+    },
 ]
 
 
 const jobOffers=[
-    //name,brief,link
+    //name, briefEN,briefES,briefCAT, link
+    {
+        name:"Offer 1",
+        briefEN:"This is the first offer",
+        briefES:"Esta es la primera oferta",
+        briefCAT:"Aquesta és la primera oferta",
+        link:"",
+    },
+    {
+        name:"Offer 2",
+        briefEN:"This is the second offer",
+        briefES:"Esta es la segunda oferta",
+        briefCAT:"Aquesta és la segona oferta",
+        link:"",
+    },
+    {
+        name:"Offer 3",
+        briefEN:"This is the third offer",
+        briefES:"Esta es la tercera oferta",
+        briefCAT:"Aquesta és la tercera oferta",
+        link:"",
+    },
 ]
 
 const news=[

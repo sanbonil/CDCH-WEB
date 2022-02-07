@@ -79,6 +79,8 @@ var arrLang = {
         "footerFundingText":"The project is funded by AEI with the code PID2020-115456RB-I00 /MCIN/AEI /10.13039/501100011033.",
         "moreInfo":"More information",
         "publiLink":"PUBLICATION LINK",
+        "conferenceLink":"CONFERENCE LINK",
+        "offerLink":"JOB OFFER LINK",
     },
     'es':{
         'subtitle':'Integración de estrategias de reutilización del agua inspiradas en la naturaleza con la presencia e impacto de microcontaminantes y microplásticos mediante análisis avanzado.',
@@ -160,6 +162,8 @@ var arrLang = {
         "footerFundingText":"Proyecto financiado por AEI con el código PID2020-115456RB-I00 /MCIN/AEI /10.13039/501100011033.",
         "moreInfo":"Más información",
         "publiLink":"LINK DE LA PUBLICACIÓN",
+        "conferenceLink":"LINK DE LA CONFERENCIA",
+        "offerLink":"LINK A LA OFERTA",
     },
     'cat':{
         'subtitle':"Integració d'estratègies de reutilització de l'aigua inspirades en la natura amb la presència i l'impacte de microcontaminants i microplàstics mitjançant anàlisi avançada.",
@@ -203,7 +207,7 @@ var arrLang = {
         'h3techCompanies':'COMPANYIES TECNOLÒGIQUES I ALTRES',
         'h3Conferences':'CONFERÉNCIES',
         'h3Publications':'PUBLICACIONS',
-        'h3JobOffers':'OFERTES DE FEINA',
+        'h3JobOffers':'OFERTES DE TREBALL',
         'about':'Sobre',
         'quickLinks':'Enllaços ràpids',
         'text1span1':"L'objectiu del projecte ReUseMP3 és explorar la viabilitat de l'ús de ",
@@ -241,5 +245,7 @@ var arrLang = {
         "footerFundingText":"Projecte financiat per AEI amb el codi PID2020-115456RB-I00 /MCIN/AEI /10.13039/501100011033.",
         "moreInfo":"Més informació",
         "publiLink":"LINK DE LA PUBLICACIÓ",
+        "conferenceLink":"LINK DE LA CONFERÈNCIA",
+        "offerLink":"LINK A LA OFERTA",
     }
 }

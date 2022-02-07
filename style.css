@@ -184,8 +184,11 @@ h3{
     border-radius: 10px;
 }
 
-#membersContainer,#publicationsContainer,#projectsContainer{
+#membersContainer,#publicationsContainer,#projectsContainer,#conferencesContainer,#jobs{
     width: 100%;
+}
+#jobContainer{
+    width: 75%;
 }
 .pic{
     border-radius: 50%; 
