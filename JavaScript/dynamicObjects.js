@@ -107,7 +107,7 @@ const members = [
         descriptionES:"Dr. Gaétan Blandin se centra en los procesos del agua asociados con tecnologías de membrana, en particular con tecnologías de ósmosis directa, en el contexto de la economía circular. Actualmente en Lequia trabajando en el proyecto FORWARD Factory (becario líder de La Caixa Junior). En ReUseMP3 estará trabajando principalmente en WP1.",
         descriptionCAT:"Dr. Gaétan Blandin se centra en els processos de l'aigua associats amb tecnologies de membrana, en particular amb tecnologies d'osmosi directa, en el context de l'economia circular. Actualment a Lequia treballant al projecte FORWARD Factory (becari líder de La Caixa Junior). A ReUseMP3 estarà treballant principalment a WP1.",
         link: "https://www.scopus.com/authid/detail.uri?authorId=56625035000"
-    }
+    },
 ]
 
 const advisoryBoard=[
@@ -167,63 +167,21 @@ const advisoryBoard=[
 const publications=[
     //name, briefEN,briefES,briefCAT, link
     {
-        name:"Publication 1",
-        briefEN:"This is the first publication",
-        briefES:"Esta es la primera publicación",
-        briefCAT:"Aquesta és la primera publicació",
-        link:"",
-    },
-    {
-        name:"Publication 2",
-        briefEN:"This is the second publication",
-        briefES:"Esta es la segunda publicación",
-        briefCAT:"Aquesta és la segona publicació",
-        link:"",
+        name:"Nature-based solutions coupled with advanced technologies: An opportunity for decentralized water reuse in cities",
+        briefEN:"Decentralized water reuse in cities is a prominent alternative to mainstream top-down models for urban water treatment. In this sense, Nature-based Solutions (“green” technologies) coupled with advanced technologies (“grey” technologies) constitute a promising approach for fomenting onsite water treatment and reuse in cities, while also providing multiple co-benefits. This article puts forward a conceptual advancement by providing a better understanding of coupled “green-grey”/“grey-green” technologies (CGGT).",
+        briefES:"La reutilización descentralizada del agua en las ciudades es una alternativa destacada a los modelos dominantes de arriba hacia abajo para el tratamiento del agua urbana. En este sentido, las soluciones basadas en la naturaleza (tecnologías “verdes”) junto con tecnologías avanzadas (tecnologías “grises”) constituyen un enfoque prometedor para fomentar el tratamiento y la reutilización de agua en el sitio en las ciudades, al mismo tiempo que brindan múltiples co-beneficios. Este artículo presenta un avance conceptual al proporcionar una mejor comprensión de las tecnologías acopladas “verde-gris”/“gris-verde” (CGGT).",
+        briefCAT:"La reutilització descentralitzada de l'aigua a les ciutats és una alternativa destacada als models dominants de dalt a baix per al tractament de l'aigua urbana. En aquest sentit, les solucions basades en la natura (tecnologies “verdes”) juntament amb les tecnologies avançades (tecnologies “grises”) constitueixen un enfocament prometedor per fomentar el tractament i la reutilització de l'aigua in situ a les ciutats, alhora que ofereixen múltiples co-beneficis. Aquest article proposa un avenç conceptual proporcionant una millor comprensió de les tecnologies acoblades “verd-gris”/“gris-verd” (CGGT).",
+        link:"https://www.sciencedirect.com/science/article/pii/S0959652622003006?via%3Dihub",
     },
 ]
 
 const conferences=[
     //name, briefEN,briefES,briefCAT, link
-    {
-        name:"Conference 1",
-        briefEN:"This is the first conference",
-        briefES:"Esta es la primera conferencia",
-        briefCAT:"Aquesta és la primera conferència",
-        link:"",
-    },
-    {
-        name:"Conference 2",
-        briefEN:"This is the second conference",
-        briefES:"Esta es la segunda conferencia",
-        briefCAT:"Aquesta és la segona conferència",
-        link:"",
-    },
 ]
 
 
 const jobOffers=[
     //name, briefEN,briefES,briefCAT, link
-    {
-        name:"Offer 1",
-        briefEN:"This is the first offer",
-        briefES:"Esta es la primera oferta",
-        briefCAT:"Aquesta és la primera oferta",
-        link:"",
-    },
-    {
-        name:"Offer 2",
-        briefEN:"This is the second offer",
-        briefES:"Esta es la segunda oferta",
-        briefCAT:"Aquesta és la segona oferta",
-        link:"",
-    },
-    {
-        name:"Offer 3",
-        briefEN:"This is the third offer",
-        briefES:"Esta es la tercera oferta",
-        briefCAT:"Aquesta és la tercera oferta",
-        link:"",
-    },
 ]
 
 const news=[
@@ -245,34 +203,42 @@ const news=[
 ]
 
 const relatedProjects=[
-    //name,briefEN,briefES,briefCAT,links
+    //id,name,briefEN,briefES,briefCAT,links,boolImage
     {
+        id:1,
         name:"HYDROUSA",
         briefEN:"Demonstration of water loops with innovative regenerative business models for the Mediterranean region",
         briefES:"Demostración de circuitos de agua con modelos de negocio regenerativos innovadores para la región mediterránea",
         briefCAT:"Demostració de bucles d'aigua amb models de negoci regeneratius innovadors per a la regió mediterrània",
-        links:["https://www.hydrousa.org/","https://www.icra.cat/projects/demonstration-water-loops-with-innovative/122"]
+        links:["https://www.hydrousa.org/","https://www.icra.cat/projects/demonstration-water-loops-with-innovative/122"],
+        boolImage:true,
     },
     {
+        id:2,
         name:"MULTISOURCE",
         briefEN:"Modular tools for integrating enhanced natural treatment solutions into urban water cycles",
         briefES:"Herramientas modulares para integrar soluciones de tratamiento natural en los ciclos de agua urbanos",
         briefCAT:"Eines modulars per integrar solucions de tractament natural als cicles d'aigua urbans",
-        links:["https://multisource.eu/","https://www.icra.cat/projects/multisource-modular-tools-integrating-enhanced/181"]
+        links:["https://multisource.eu/","https://www.icra.cat/projects/multisource-modular-tools-integrating-enhanced/181"],
+        boolImage:true,
     },
     {
+        id:3,
         name:"LIFE-RECYCLO",
         briefEN:"Recycling waste water from small and mèdium sized laundries with advances oxidation process",
         briefES:"Reciclaje de aguas residuales de pequeñas y medianas lavanderías con procesos de oxidación avanzados",
         briefCAT:"Reciclatge d'aigües residuals de bugaderies petites i mitjanes amb avançats processos d'oxidació",
-        links:["http://treewater.fr/fr/recyclo","https://www.icra.cat/projectes/life-recyclo-recycling-waste-water/202"]
+        links:["http://treewater.fr/fr/recyclo","https://www.icra.cat/projectes/life-recyclo-recycling-waste-water/202"],
+        boolImage:true,
     },
     {
+        id:4,
         name:"SAFE",
         briefEN:"Sustainable water reuse practices improving safety in agriculture, food and environment",
         briefES:"Prácticas sostenibles de reutilización del agua que mejoran la seguridad en la agricultura, la alimentación y el medio ambiente",
         briefCAT:"Pràctiques sostenibles de reutilització de l'aigua que milloren la seguretat a l'agricultura, l'alimentació i el medi ambient",
-        links:[]
+        links:[],
+        boolImage:false,
     }
 
 ]

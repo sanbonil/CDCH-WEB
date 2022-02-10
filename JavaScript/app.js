@@ -220,6 +220,7 @@ function renderDynamicObjects(){
         <p class="card-text">${actualLanguage==="en"?`${project.briefEN}`:actualLanguage==="es"?`${project.briefES}`:actualLanguage==="cat"&&`${project.briefCAT}`}</p>
         ${project.links.map(link=>`<a href="${link}" class="card-link">${link}</a>`)}
       </div>
+      ${project.boolImage?`<img style="width:200px;margin:0px 0px 10px 15px" src="./images/project${project.id}.png" alt="project logo">`:``}
     </div>
     `
   }
