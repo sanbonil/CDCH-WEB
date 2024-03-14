@@ -2,17 +2,17 @@ const members = [
     //id, nameEN,nameES, briefEN,briefES,briefCAT, descriptionEN,descriptionES,descriptionCAT, link
     {
         id : 1,
-        nameEN : "Dr. Sara Rodríguez Mozaz",
-        nameES : "Dra. Sara Rodríguez Mozaz",
-        briefEN: "Research Scientist, ICRA, PI of ReUseMP3",
-        briefES: "Investigadora científica, ICRA, PI de ReUseMP3",
-        briefCAT: "Investigadora científica, ICRA, PI de ReUseMP3",
-        descriptionEN:"Dr. Sara Rodriguez-Mozaz focuses her research on the development of advanced analytical tools to study the origin, fate, and ecological impact of the so-called emerging contaminants in the environment and in human health. She is PI of ReUseMP3 and leader of WP3, WP4, and WP5.",
+        nameEN : "Dr. Ignasi Rodriguez-Roda Layret",
+        nameES : "Dra. Ignasi Rodriguez-Roda Layret",
+        briefEN: "Professor, UdG, Cathedra Director",
+        briefES: "Catedrático, UdG, Director de Cátedra",
+        briefCAT: "Catedràtic, UdG, Director de Càtedra",
+        descriptionEN:"Chemical engineering professor at the Universitat de Girona and senior Researcher at LEQUiA-UdG",
         descriptionES:"Dra. Sara Rodríguez-Mozaz centra su investigación en el desarrollo de herramientas analíticas avanzadas para estudiar el origen, el destino y el impacto ecológico de los denominados contaminantes emergentes en el medio ambiente y en la salud humana. Es IP de ReUseMP3 y líder de WP3, WP4 y WP5.",
         descriptionCAT:"Dra. Sara Rodríguez-Mozaz centra la seva recerca en el desenvolupament d'eines analítiques avançades per estudiar l'origen, el destí i l'impacte ecològic dels anomenats contaminants emergents al medi ambient i sobre la salut humana. És IP de ReUseMP3 i líder de WP3, WP4 i WP5.",
-        link: "https://www.scopus.com/authid/detail.uri?authorId=55940978800"
+        link: "https://orcid.org/0000-0002-8989-9061"
     },
-    {
+  /*  {
         id : 2,
         nameEN : "Dr. Gianluigi Buttiglieri",
         nameES : "Dr. Gianluigi Buttiglieri",
@@ -108,11 +108,12 @@ const members = [
         descriptionCAT:"Dr. Gaétan Blandin se centra en els processos de l'aigua associats amb tecnologies de membrana, en particular amb tecnologies d'osmosi directa, en el context de l'economia circular. Actualment a Lequia treballant al projecte FORWARD Factory (becari líder de La Caixa Junior). A ReUseMP3 estarà treballant principalment a WP1.",
         link: "https://www.scopus.com/authid/detail.uri?authorId=56625035000"
     },
+    */
 ]
 
 const advisoryBoard=[
     //name, locationEN,locationES,locationCAT, briefEN,briefES,briefCAT, link
-    {
+    /*{
         name : "Evina Katsou",
         locationEN:"Brunel University (UK)",
         locationES:"Universidad de Brunel (Reino Unido)",
@@ -151,7 +152,7 @@ const advisoryBoard=[
         briefES:"NBS y microcontaminantes",
         briefCAT:"NBS i microcontaminants",
         link:"https://www.scopus.com/authid/detail.uri?authorId=22978130100"
-    },
+    },*/
     {
         name : "Xavier Amores",
         locationEN:"(Girona, Spain)",
@@ -213,7 +214,7 @@ const relatedProjects=[
         links:["https://www.hydrousa.org/","https://www.icra.cat/projects/demonstration-water-loops-with-innovative/122"],
         boolImage:true,
     },
-    {
+    /*{
         id:2,
         name:"MULTISOURCE",
         briefEN:"Modular tools for integrating enhanced natural treatment solutions into urban water cycles",
@@ -239,6 +240,6 @@ const relatedProjects=[
         briefCAT:"Pràctiques sostenibles de reutilització de l'aigua que milloren la seguretat a l'agricultura, l'alimentació i el medi ambient",
         links:[],
         boolImage:false,
-    }
+    }*/
 
 ]

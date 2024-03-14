@@ -240,7 +240,7 @@ function renderSupporters(){
   //Authorities rendering
   const authoritiesContainer = document.getElementById("authoritiesGroup")
   authoritiesContainer.innerHTML=""
-  for(let i=1;i<6;i++){
+  for(let i=1;i<3;i++){
     authoritiesContainer.innerHTML+=`
     <img class="institutionImage" src="./images/authority${i}.png" alt="authority image">
     `
@@ -249,7 +249,7 @@ function renderSupporters(){
   //Universities rendering
   const universitiesContainer = document.getElementById("universitiesGroup")
   universitiesContainer.innerHTML=""
-  for(let i=1;i<5;i++){
+  for(let i=1;i<0;i++){
     universitiesContainer.innerHTML+=`
     <img class="institutionImage" src="./images/university${i}.png" alt="university image">
     `
@@ -259,13 +259,13 @@ function renderSupporters(){
   const companiesContainer = document.getElementById("companiesGroup")
   const othersContainer = document.getElementById("othersGroup")
   companiesContainer.innerHTML=""
-  for(let i=1;i<4;i++){
+  for(let i=2;i<3;i++){
     companiesContainer.innerHTML+=`
-    <img class="companyImage" src="./images/company${i}.png" alt="company image">
+    <img class="institutionImage" src="./images/company${i}.png" alt="company image">
     `
   }
   othersContainer.innerHTML=""
-  for(let i=4;i<6;i++){
+  for(let i=0;i<0;i++){
     othersContainer.innerHTML+=`
     <img class="companyImage" src="./images/company${i}.png" alt="company image">
     `

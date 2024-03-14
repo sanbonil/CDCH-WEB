@@ -403,7 +403,7 @@ h3{
 }
 .social-icons
 {
-  padding-left:0;
+  padding-left:500px;
   margin-bottom:0;
   list-style:none;
   display: flex;
@@ -419,6 +419,10 @@ h3{
 }
 .footerImage:hover{
     cursor: pointer;
+}
+.footerLongImage{
+    width: 500px;
+    margin-right: 400px;
 }
   
 
