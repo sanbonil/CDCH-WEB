@@ -3,52 +3,52 @@ const members = [
     {
         id : 1,
         nameEN : "Dr. Ignasi Rodriguez-Roda Layret",
-        nameES : "Dra. Ignasi Rodriguez-Roda Layret",
+        nameES : "Laboratorio de Ingeniería Química y Analítica - LEQUIA",
         briefEN: "Professor, UdG, Cathedra Director",
-        briefES: "Catedrático, UdG, Director de Cátedra",
+        briefES: "",
         briefCAT: "Catedràtic, UdG, Director de Càtedra",
         descriptionEN:"Chemical engineering professor at the Universitat de Girona and senior Researcher at LEQUiA-UdG",
-        descriptionES:"Dra. Sara Rodríguez-Mozaz centra su investigación en el desarrollo de herramientas analíticas avanzadas para estudiar el origen, el destino y el impacto ecológico de los denominados contaminantes emergentes en el medio ambiente y en la salud humana. Es IP de ReUseMP3 y líder de WP3, WP4 y WP5.",
+        descriptionES:"El Laboratori d’Enginyeria Química i Ambiental (LEQUIA) es un grupo de investigación de la Universitat de Girona, que desarrolla soluciones eco-innovadoras en el ámbito del medio ambiente. Las líneas actuales de investigación son: 1) bioprocesos innovadores para el tratamiento, la recuperación de recursos y la síntesis de nuevos productos; 2) procesos avanzados fisicoquímicos para el tratamiento y/o reutilización de efluentes líquidos y gaseosos; y 3) la planificación y control, así como la evaluación de sistemas ambientales complejos.",
         descriptionCAT:"Dra. Sara Rodríguez-Mozaz centra la seva recerca en el desenvolupament d'eines analítiques avançades per estudiar l'origen, el destí i l'impacte ecològic dels anomenats contaminants emergents al medi ambient i sobre la salut humana. És IP de ReUseMP3 i líder de WP3, WP4 i WP5.",
-        link: "https://orcid.org/0000-0002-8989-9061"
+        link: ""
     },
-  /*  {
+   {
         id : 2,
         nameEN : "Dr. Gianluigi Buttiglieri",
-        nameES : "Dr. Gianluigi Buttiglieri",
+        nameES : "Investigadores criminología",
         briefEN: "Research Scientist, ICRA, PI of ReUseMP3",
-        briefES:"Investigador científico, ICRA, PI de ReUseMP3",
+        briefES:"",
         briefCAT:"Investigador científic, ICRA, PI de ReUseMP3",
         descriptionEN:"Dr. Gianluigi Buttiglieri focuses his research on water reuse, circular economy, and nature-based solutions, with a special attention on the fate of organic micropollutants in water and wastewater technologies. He is PI of ReUseMP3 and leader of WP1, WP2 and WP4.",
-        descriptionES:"Dr. Gianluigi Buttiglieri centra su investigación en la reutilización del agua, la economía circular y las soluciones basadas en la naturaleza, con especial atención al destino de los microcontaminantes orgánicos en las tecnologías de tratamiento de aguas residuales. Es IP de ReUseMP3 y líder de WP1, WP2 y WP4.",
+        descriptionES:"",
         descriptionCAT:"Dr. Gianluigi Buttiglieri centra la seva recerca en la reutilització de l'aigua, l'economia circular i les solucions basades en la natura, amb una atenció especial al destí dels microcontaminants orgànics a les tecnologies de tractament de les aigües residuals. És IP de ReUseMP3 i líder dels WP1, WP2 i WP4.",
-        link: "https://www.scopus.com/authid/detail.uri?authorId=15031298100"
+        link: ""
     },
     {
         id : 3,
         nameEN : "Dr. Quim Comas",
-        nameES : "Dr. Quim Comas",
+        nameES : "Investigdores derecho",
         briefEN: "Professor, UdG",
-        briefES:"Profesor, UdG",
+        briefES:"",
         briefCAT:"Professor, UdG",
         descriptionEN:"Dr. Quim Comas is expert on the development of tools and technologies to foster the implementation of circular economy in the urban water cycle, multicriteria decision support systems, nature-based solutions, and membrane technologies. In ReUseMP3 he will be working mainly in WP2 and WP6.",
-        descriptionES:"Dr. Quim Comas es experto en el desarrollo de herramientas y tecnologías para fomentar la implementación de la economía circular en el ciclo urbano del agua, sistemas de apoyo a la decisión multicriterio, soluciones basadas en la naturaleza y tecnologías de membranas. En ReUseMP3 trabajará principalmente en WP2 y WP6.",
+        descriptionES:"",
         descriptionCAT:"Dr. Quim Comas és expert en el desenvolupament d'eines i tecnologies per fomentar la implementació de l'economia circular al cicle urbà de l'aigua, sistemes de suport a la decisió multicriteri, solucions basades en la naturalesa i tecnologies de membranes. A ReUseMP3 treballarà principalment als WP2 i WP6.",
-        link: "https://www.scopus.com/authid/detail.uri?authorId=56484784800"
+        link: ""
     },
-    {
+   {
         id : 4,
         nameEN : "Dr. Eusebi Calle Ortega",
         nameES : "Dr. Eusebi Calle Ortega",
         briefEN: "Professor, UdG",
-        briefES:"Profesor, UdG",
+        briefES:"BCDS",
         briefCAT:"Professor, UdG",
         descriptionEN:"Dr. Eusebi Calle Ortega has expertise in the design and analysis of availability, robustness, and routing schemes in different types of networks, including water distribution networks. In ReUseMP3 he will be working mainly in WP6.",
-        descriptionES:"Dr. Eusebi Calle Ortega tiene experiencia en el diseño y análisis de disponibilidad, robustez y esquemas de enrutamiento en diferentes tipos de redes, incluidas las redes de distribución de agua. En ReUseMP3 trabajará principalmente en WP6.",
+        descriptionES:"El grupo de investigación BCDS-UdG tiene experiencia en la aplicación de la ciencia de redes, la teoría de grafos y la inteligencia artificial/aprendizaje automático al área de redes informáticas (por ejemplo, diseño de mecanismos de enrutamiento, resiliencia y gestión dinámica de recursos) y al área de redes de agua (por ejemplo, diseño de redes de distribución de agua y colocación de sensores en redes de aguas residuales) ",
         descriptionCAT:"Dr. Eusebi Carrer Ortega té experiència en el disseny i l'anàlisi de disponibilitat, robustesa i esquemes d'encaminament en diferents tipus de xarxes, incloses les xarxes de distribució d'aigua. A ReUseMP3 treballarà principalment a WP6.",
-        link: "https://www.scopus.com/authid/detail.uri?authorId=7005657673"
+        link: ""
     },
-    {
+  /*  {
         id : 5,
         nameEN : "Dr. Diana Alvarez",
         nameES : "Dra. Diana Alvarez",
@@ -153,7 +153,7 @@ const advisoryBoard=[
         briefCAT:"NBS i microcontaminants",
         link:"https://www.scopus.com/authid/detail.uri?authorId=22978130100"
     },*/
-    {
+   /* {
         name : "Xavier Amores",
         locationEN:"(Girona, Spain)",
         locationES:"(Girona, España)",
@@ -162,18 +162,18 @@ const advisoryBoard=[
         briefES:"Cluster Manager del Catalan Water Partnership",
         briefCAT:"Cluster Manager del Catalan Water Partnership",
         link:"http://www.cwp.cat/en/"
-    },
+    },*/
 ]
 
 const publications=[
     //name, briefEN,briefES,briefCAT, link
-    {
+ /*   {
         name:"Nature-based solutions coupled with advanced technologies: An opportunity for decentralized water reuse in cities",
         briefEN:"Decentralized water reuse in cities is a prominent alternative to mainstream top-down models for urban water treatment. In this sense, Nature-based Solutions (“green” technologies) coupled with advanced technologies (“grey” technologies) constitute a promising approach for fomenting onsite water treatment and reuse in cities, while also providing multiple co-benefits. This article puts forward a conceptual advancement by providing a better understanding of coupled “green-grey”/“grey-green” technologies (CGGT).",
         briefES:"La reutilización descentralizada del agua en las ciudades es una alternativa destacada a los modelos dominantes de arriba hacia abajo para el tratamiento del agua urbana. En este sentido, las soluciones basadas en la naturaleza (tecnologías “verdes”) junto con tecnologías avanzadas (tecnologías “grises”) constituyen un enfoque prometedor para fomentar el tratamiento y la reutilización de agua en el sitio en las ciudades, al mismo tiempo que brindan múltiples co-beneficios. Este artículo presenta un avance conceptual al proporcionar una mejor comprensión de las tecnologías acopladas “verde-gris”/“gris-verde” (CGGT).",
         briefCAT:"La reutilització descentralitzada de l'aigua a les ciutats és una alternativa destacada als models dominants de dalt a baix per al tractament de l'aigua urbana. En aquest sentit, les solucions basades en la natura (tecnologies “verdes”) juntament amb les tecnologies avançades (tecnologies “grises”) constitueixen un enfocament prometedor per fomentar el tractament i la reutilització de l'aigua in situ a les ciutats, alhora que ofereixen múltiples co-beneficis. Aquest article proposa un avenç conceptual proporcionant una millor comprensió de les tecnologies acoblades “verd-gris”/“gris-verd” (CGGT).",
         link:"https://www.sciencedirect.com/science/article/pii/S0959652622003006?via%3Dihub",
-    },
+    },*/
 ]
 
 const conferences=[
@@ -187,7 +187,7 @@ const jobOffers=[
 
 const news=[
     //name,briefEN,briefES,briefCAT,link
-    {
+   /* {
         name:"ICRA newsletter September 2021",
         briefEN:"",
         briefES:"",
@@ -200,12 +200,30 @@ const news=[
         briefES:"Soluciones basadas en la naturaleza para la transición a ciudades circulares",
         briefCAT:"Solucions basades en la natura per a la transició a ciutats circulars",
         link:"https://www.retema.es/noticia/soluciones-basadas-en-la-naturaleza-para-la-transicion-hacia-ciudades-circulares-R2cY"
-    }
+    }*/
+]
+
+const agenda=[
+    //name,briefEN,briefES,briefCAT,link
+    /* {
+         name:"ICRA newsletter September 2021",
+         briefEN:"",
+         briefES:"",
+         briefCAT:"",
+         link:"https://mailchi.mp/a1811b7d3d04/icra-news-setembre-2021?e=b546b9fa1f"
+     },
+     {
+         name:"RETEMA",
+         briefEN:"Nature-based solutions for the transition to circular cities",
+         briefES:"Soluciones basadas en la naturaleza para la transición a ciudades circulares",
+         briefCAT:"Solucions basades en la natura per a la transició a ciutats circulars",
+         link:"https://www.retema.es/noticia/soluciones-basadas-en-la-naturaleza-para-la-transicion-hacia-ciudades-circulares-R2cY"
+     }*/
 ]
 
 const relatedProjects=[
     //id,name,briefEN,briefES,briefCAT,links,boolImage
-    {
+  /*  {
         id:1,
         name:"HYDROUSA",
         briefEN:"Demonstration of water loops with innovative regenerative business models for the Mediterranean region",

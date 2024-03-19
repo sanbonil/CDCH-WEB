@@ -1,5 +1,5 @@
 //GLOBAL VARIABLE
-var actualLanguage = "en";
+var actualLanguage = "es";
 
 
 /*Offcanvas actions*/
@@ -102,7 +102,7 @@ function renderDynamicObjects(){
             </div>
             
             <div class="modal-footer" >
-              ${member.link!==""?`<a class="lang" key="moreInfo" href="${member.link}" target="_blank">More information</a>`:``}
+              ${member.link!==""?`<a class="lang" key="moreInfo" href="${member.link}" target="_blank">Más información</a>`:``}
             </div>
           </div>
         </div>
@@ -120,118 +120,12 @@ function renderDynamicObjects(){
     `
   }
 
-
-  //Conferences rendering
-  const conferencesContainer = document.getElementById("conferencesContainer")
-  if(conferences.length>0){
-    conferencesContainer.innerHTML=""
-    conferencesContainer.innerHTML+=`<h3 style="margin-bottom:30px" class="lang" key="h3Conferences">CONFERENCES</h3>`
-    for(let conference of conferences){
-      conferencesContainer.innerHTML+=`
-      <div class="card w-75" style="margin-bottom:30px">
-        <div class="card-body">
-          <h5 class="card-title"><b>${conference.name}</b></h5>
-          <p class="card-text">${actualLanguage==="en"?`${conference.briefEN}`:actualLanguage==="es"?`${conference.briefES}`:actualLanguage==="cat"&&`${conference.briefCAT}`}</p>
-          <a href="${conference.link}" class="card-link lang" key="conferenceLink">CONFERENCE LINK</a>
-        </div>
-      </div>
-      `
-    }
-  }
-  else{
-    conferencesContainer.style.display="none"
-  }
-
-  //Publications rendering
-  const publicationsContainer = document.getElementById("publicationsContainer")
-  if(publications.length>0){
-    publicationsContainer.innerHTML=""
-    publicationsContainer.style.display="flex"
-    publicationsContainer.innerHTML+=`
-    <h3 class="lang" key="h3Publications">PUBLICATIONS</h3>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-
-    </div>
-    `
-    const publicationsContent = document.getElementById("accordionFlushExample")
-    let x = 0;
-    for(let publication of publications){
-      publicationsContent.innerHTML+=`
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="flush-heading${x}">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${x}" aria-expanded="false" aria-controls="flush-collapseOne">
-            ${publication.name}
-          </button>
-        </h3>
-        <div id="flush-collapse${x}" class="accordion-collapse collapse" aria-labelledby="flush-heading${x}" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-          <p>${actualLanguage==="en"?`${publication.briefEN}`:actualLanguage==="es"?`${publication.briefES}`:actualLanguage==="cat"&&`${publication.briefCAT}`}</p>
-          <a class="lang" key="publiLink" class="accordion-body" target="_blank" href="${publication.link}">PUBLICATION LINK</a>
-          </div>
-        </div>
-      </div>
-      `
-      x++;
-    }
-  }
-  else{
-    publicationsContainer.style.display="none"
-  }
-
-  //JobOffers rendering
-  const offersContainer = document.getElementById("jobContainer")
-  if(jobOffers.length>0){
-    offersContainer.innerHTML=""
-    offersContainer.style.display="flex"
-    offersContainer.innerHTML+=`
-    <h3 style="margin-bottom:30px" class="lang" key="h3JobOffers">JOB OFFERS</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4" id="jobs">
-
-    </div>
-    `
-    const jobsContent = document.getElementById("jobs")
-    for(let job of jobOffers){
-      jobsContent.innerHTML+=`
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">${job.name}</h5>
-            <p class="card-text">${actualLanguage==="en"?`${job.briefEN}`:actualLanguage==="es"?`${job.briefES}`:actualLanguage==="cat"&&`${job.briefCAT}`}</p>
-            <a href="${job.link}" class="card-link lang" key="offerLink">JOB OFFER LINK</a>
-          </div>
-        </div>
-      </div>      
-      `
-    }
-  }
-  else{
-    offersContainer.style.display="none"
-  }
-
-  //Related Projects rendering
-  const projectsContainer = document.getElementById("projectsContainer")
-  projectsContainer.innerHTML=""
-  projectsContainer.innerHTML+=`<h3 style="margin-bottom:30px" class="lang" key="h3RelatedProjects">RELATED PROJECTS</h3>`
-  for(let project of relatedProjects){
-    projectsContainer.innerHTML+=`
-    <div class="card w-75" style="margin-bottom:30px">
-      <div class="card-body">
-        <h5 class="card-title"><b>${project.name}</b></h5>
-        <p class="card-text">${actualLanguage==="en"?`${project.briefEN}`:actualLanguage==="es"?`${project.briefES}`:actualLanguage==="cat"&&`${project.briefCAT}`}</p>
-        ${project.links.map(link=>`<a href="${link}" class="card-link">${link}</a>`)}
-      </div>
-      ${project.boolImage?`<img style="width:200px;margin:0px 0px 10px 15px" src="./images/project${project.id}.png" alt="project logo">`:``}
-    </div>
-    `
-  }
-
-  //Advisory Board rendering
-  const advisoryContainer = document.getElementById("advisoryBoard")
-  advisoryContainer.innerHTML=""
-  for(let advisor of advisoryBoard){
-    advisoryContainer.innerHTML+=`
-    <h4 class="member-name advisor">${advisor.name}</h4>
-    <p><b>${actualLanguage==="en"?`${advisor.locationEN}`:actualLanguage==="es"?`${advisor.locationES}`:actualLanguage==="cat"&&`${advisor.locationCAT}`}</b> <br> ${actualLanguage==="en"?`${advisor.briefEN}`:actualLanguage==="es"?`${advisor.briefES}`:actualLanguage==="cat"&&`${advisor.briefCAT}`}<br><a class="lang" key="moreInfo" href="${advisor.link}" target="_blank">More information</a></p>
+  const agendaContainer = document.getElementById("agenda")
+  agendaContainer.innerHTML=""
+  for(let noticia of agenda){
+    agendaContainer.innerHTML+=`
+    <h4 class="member-name advisor">${noticia.name}</h4>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">More information</a></p>
     `
   }
 }
