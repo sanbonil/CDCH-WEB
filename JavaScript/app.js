@@ -134,7 +134,7 @@ function renderSupporters(){
   //Authorities rendering
   const authoritiesContainer = document.getElementById("authoritiesGroup")
   authoritiesContainer.innerHTML=""
-  for(let i=1;i<3;i++){
+  for(let i=1;i<5;i++){
     authoritiesContainer.innerHTML+=`
     <img class="institutionImage" src="./images/authority${i}.png" alt="authority image">
     `

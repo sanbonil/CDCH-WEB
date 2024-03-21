@@ -15,7 +15,7 @@ const members = [
    {
         id : 2,
         nameEN : "Dr. Gianluigi Buttiglieri",
-        nameES : "Investigadores criminología",
+        nameES : "Investigadores Criminología",
         briefEN: "Research Scientist, ICRA, PI of ReUseMP3",
         briefES:"",
         briefCAT:"Investigador científic, ICRA, PI de ReUseMP3",
@@ -27,7 +27,7 @@ const members = [
     {
         id : 3,
         nameEN : "Dr. Quim Comas",
-        nameES : "Investigdores derecho",
+        nameES : "Investigadores Derecho",
         briefEN: "Professor, UdG",
         briefES:"",
         briefCAT:"Professor, UdG",
@@ -39,9 +39,9 @@ const members = [
    {
         id : 4,
         nameEN : "Dr. Eusebi Calle Ortega",
-        nameES : "Dr. Eusebi Calle Ortega",
+        nameES : "Broadband Communications and Distributed Systems - BCDS",
         briefEN: "Professor, UdG",
-        briefES:"BCDS",
+        briefES:"",
         briefCAT:"Professor, UdG",
         descriptionEN:"Dr. Eusebi Calle Ortega has expertise in the design and analysis of availability, robustness, and routing schemes in different types of networks, including water distribution networks. In ReUseMP3 he will be working mainly in WP6.",
         descriptionES:"El grupo de investigación BCDS-UdG tiene experiencia en la aplicación de la ciencia de redes, la teoría de grafos y la inteligencia artificial/aprendizaje automático al área de redes informáticas (por ejemplo, diseño de mecanismos de enrutamiento, resiliencia y gestión dinámica de recursos) y al área de redes de agua (por ejemplo, diseño de redes de distribución de agua y colocación de sensores en redes de aguas residuales) ",

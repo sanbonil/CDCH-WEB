@@ -15,9 +15,8 @@ ul{
 header{
     height: 100vh;
     width: 100%;
-    background-image: url("./images/gradient.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(335deg, rgba(2,0,36,1) 0%, rgba(8,8,251,1) 50%, rgba(0,212,255,1) 100%);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -26,6 +25,15 @@ header{
 }
 a{
     text-decoration: none;
+}
+
+#simbol{
+    width: 300px;
+}
+
+#navLogo{
+    content: url("./images/logoheader.png");
+    width: 1000px;
 }
 
 
@@ -447,13 +455,14 @@ h3{
         width: 90%;
     }
     #navLogo{
-        width: 200px;
+        content: url("./images/logosmobile.png");
+        width: 250px;
     }
     .container-fluid{
         padding-left: 0;
     }
     #simbol{
-        width: 60px;
+        width: 150px;
     }
     #welcomeInfo{
         font-size: 1.2rem;
@@ -464,8 +473,6 @@ h3{
     .companyImage{
         margin: 10px;
     }
-}
-@media (max-width: 425px){
     #aboutFooter{
         display: none;
     }

@@ -20,8 +20,8 @@
     <header>
         <nav id="navBar" class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand ">
-                 <!-- <img id="navLogo" src="./images/logoHorizontal.png" alt="Logo"> -->
+                <a class="navbar-brand " href="https://www.incibe.es/" target="_blank" rel="noopener noreferrer">
+                  <img id="navLogo" src="./images/logoheader.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" id="offcanvasButton" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle lang" key="publis&news"  id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Noticias
+                            Eventos
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
                             <li><a class="dropdown-item lang" key="news" href="#newsContainer">Noticias</a></li>
@@ -53,191 +53,166 @@
                               Colaboradores
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-                            <li><a class="dropdown-item lang" key="authorites" href="#authoritiesContainer">Colaboradores Principales</a></li>
-                            <li><a class="dropdown-item lang" key="universities" href="#universitiesContainer">Otros Colaboradores</a></li>
+                            <li><a class="dropdown-item lang" key="authorites" href="#authoritiesContainer">Principales</a></li>
+                            <li><a class="dropdown-item lang" key="universities" href="#universitiesContainer">Otros</a></li>
                           </ul>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <img id="actualLanguage" src="images/es.svg" width="16" height="11" loading="lazy">
-                          </a>
-                          <ul class="dropdown-menu" id="language-menu" aria-labelledby="navbarDropdownMenuLink4">
-                            <li><a class='dropdown-item translate' id='es'><img src="images/es.svg" width="22" height="15" loading="lazy"></a></li>
-                            <li><a class='dropdown-item translate' id='en'><img src="images/en.svg" width="22" height="15" loading="lazy"></a></li>
-                            <li><a class='dropdown-item translate' id='cat'><img src="images/cat.svg" width="22" height="15" loading="lazy"></a></li>
-                          </ul>
+                              <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img id="actualLanguage" src="images/es.svg" width="16" height="11" loading="lazy">
+                              </a>
+                     <!--        <ul class="dropdown-menu" id="language-menu" aria-labelledby="navbarDropdownMenuLink4">
+                                <li><a class='dropdown-item translate' id='es'><img src="images/es.svg" width="22" height="15" loading="lazy"></a></li>
+                                <li><a class='dropdown-item translate' id='en'><img src="images/en.svg" width="22" height="15" loading="lazy"></a></li>
+                                <li><a class='dropdown-item translate' id='cat'><img src="images/cat.svg" width="22" height="15" loading="lazy"></a></li>
+                              </ul> -->
                         </li>
-                    </ul>
+                        </ul>
+                    </div>
+                  </div>
+            </nav>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel" class="lang" key="menu">MENÚ</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="languageContainer">
+                    <!--  <img class="translate" id="en" src="images/en.svg" width="22" height="15" loading="lazy"> -->
+                      <img id="es" style="margin:0px 10px 0px 10px" src="images/es.svg" width="22" height="15" loading="lazy">
+                    <!--  <img class="translate" id="cat" src="images/cat.svg" width="22" height="15" loading="lazy"> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link canvas-links lang" key="overview" href="#container">Descripción General</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link canvas-links lang" key="members" href="#membersContainer">Grupos de Investigación</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link canvas-links lang" key="news"  href="#newsContainer">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link canvas-links lang" key="conferences" href="#agendaContainer">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link canvas-links lang" key="authorities" href="#authoritiesContainer">Colaboradores Principales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link canvas-links lang" key="universities"  href="#universitiesContainer">Otros Colaboradores</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div id="info">
+                <img id="simbol" src="./images/logoCDCH.png" alt="Logo">
+                <h2 id="welcomeInfo" class="lang" key="subtitle"> Cátedra INCIBE de Digitalización y Ciberseguridad Hídrica</h2>
+            </div>
+            <svg onclick="scrollDown()" id="scrollDown" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+        </header>
+        <section id="container">
+            <svg id="btn-back-to-top" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#3267b2" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+            <section class="sectionContainer">
+                <h3 class="lang" key="h3ProjectOverview">DESCRIPCIÓN GENERAL</h3>
+                <div class="content">
+                    <p style="flex:1;margin: 0; font-size: 1.05rem;">
+                        La cátedra “Digitalización y Ciberseguridad Hídrica” de la Universidad de Girona nace con el objetivo de promover la generación y transmisión de conocimiento de la ciberseguridad y los retos de la digitalización de las infraestructuras críticas dentro del ciclo integral del agua. La cátedra centrará sus esfuerzos en apoyar el desarrollo tecnológico y digital de las empresas en tecnologías de ciberseguridad ofreciendo soluciones a los retos más importantes a los que se enfrenta el sector, junto con las instituciones públicas implicadas, las empresas, y la ciudadanía. Dando especial importancia a su aplicación en infraestructuras críticas (o entidades críticas) del sistema hídrico español desde un punto de vista multidisciplinar, teniendo en cuenta no sólo la vertiente tecnológica de la ciberseguridad, sino también los aspectos jurídicos, criminológicos y regulatorios de la aplicación de estas tecnologías en el sector del agua.
+                    </p>
+                </div>
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title lang" key="generalInfo" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;">Información General</h5>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">
+                        <b class="lang" key="fundingAgency">FUNDADORES: </b> <span class="lang" key="fundingInfo"> Instituto Nacional de Ciberseguridad de España M.P., S.A. (INCIBE) y Universidad de Girona</span><br><br>
+                        <b class="lang" key="duration">DURACIÓN:</b> 2024-2025<br><br>
+                        <b class="lang" key="coordinator">COORDINACIÓN:</b> Universidad de Girona<br><br>
+                        <b class="lang" key="leadResearchers">DIRECTOR:</b> Dr. Ignasi Rodríguez-Roda Layret<br><br>
+                        <b class="lang" key="otherResearchers">OTROS INVESTIGADORES:</b> Dr. Eusebio Calle, Dra. Dolors Canals, Dr. David Palma, Dr. Steven Kemp, Dr. Joaquim Comas, Dr. Jesús Colprim y Dr. Héctor Monclús<br><br>
+                        <b class="lang" key="budget">PRESUPUESTO:</b> 726.755 €
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="sectionContainer" id="membersContainer">
+                <h3 class="lang" key="h3Members">GRUPOS DE INVESTIGACIÓN</h3>
+                <div class="container">
+                    <div class="gridLayout" id="memberGroup">
+                    </div>
+                </div>
+            </section>
+            <section class="sectionContainer" id="newsContainer">
+              <h3 class="lang" key="h3News">NOTICIAS</h3>
+              <div class="container" id="news">
               </div>
-        </nav>
-        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel" class="lang" key="menu">MENU</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item" id="languageContainer">
-                  <img class="translate" id="en" src="images/en.svg" width="22" height="15" loading="lazy">
-                  <img class="translate" id="es" style="margin:0px 10px 0px 10px" src="images/es.svg" width="22" height="15" loading="lazy">    
-                  <img class="translate" id="cat" src="images/cat.svg" width="22" height="15" loading="lazy">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link canvas-links lang" key="overview" href="#container">Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link canvas-links lang" key="packages" href="#workPackages">Work packages</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="field" href="#fieldSites">Field sites</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link canvas-links lang" key="mesocosm" href="#mesocosmStudies">Mesocosm studies</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link canvas-links lang" key="members" href="#membersContainer">Members</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="news"  href="#newsContainer">News</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="conferences" href="#conferencesContainer">Conferences</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="publications"  href="#publicationsContainer">Publications</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="jobOffers"  href="#jobContainer">Job offers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="relatedProjects"  href="#projectsContainer">Related projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="advisoryBoard" href="#advisoryContainer">Advisory board</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="authorities" href="#authoritiesContainer">Authorities & utilities</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="universities"  href="#universitiesContainer">Universities</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link canvas-links lang" key="techCompanies" href="#techCompaniesContainer">Tech. companies</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-        <div id="info">
-            <img id="simbol" src="./images/whiteLogo.png" alt="Logo">
-            <h2 id="welcomeInfo" class="lang" key="subtitle"> Cátedra INCIBE de Digitalización y Ciberseguridad Hídrica</h2>
-        </div>
-        <svg onclick="scrollDown()" id="scrollDown" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-        </svg>
-    </header>
-    <section id="container">
-        <svg id="btn-back-to-top" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#3267b2" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-        </svg>
-        <section class="sectionContainer">
-            <h3 class="lang" key="h3ProjectOverview">DESCRIPCIÓN GENERAL</h3>
-            <div class="content">
-                <p style="flex:1;margin: 0; font-size: 1.05rem;">
-                    La cátedra “Digitalización y Ciberseguridad Hídrica” de la Universidad de Girona nace con el objetivo de promover la generación y transmisión de conocimiento de la ciberseguridad y los retos de la digitalización de las infraestructuras críticas dentro del ciclo integral del agua. La cátedra centrará sus esfuerzos en apoyar el desarrollo tecnológico y digital de las empresas en tecnologías de ciberseguridad ofreciendo soluciones a los retos más importantes a los que se enfrenta el sector, junto con las instituciones públicas implicadas, las empresas, y la ciudadanía. Dando especial importancia a su aplicación en infraestructuras críticas (o entidades críticas) del sistema hídrico español desde un punto de vista multidisciplinar, teniendo en cuenta no sólo la vertiente tecnológica de la ciberseguridad, sino también los aspectos jurídicos, criminológicos y regulatorios de la aplicación de estas tecnologías en el sector del agua.
+            </section>
+            <section class="sectionContainer" id="agendaContainer">
+                <h3 class="lang" key="h3Agenda">AGENDA</h3>
+                <div class="container" id="agenda">
+                </div>
+            </section>
+            <section class="sectionContainer" id="authoritiesContainer">
+              <h3 class="lang" key="h3Authorities">COLABORADORES PRINCIPALES</h3>
+              <div class="container">
+                  <div class="gridLayout" id="authoritiesGroup">
+
+                  </div>
+                </div>
+            </section>
+            <section class="sectionContainer" id="universitiesContainer">
+              <h3 class="lang" key="h3Universities">OTROS COLABORADORES</h3>
+              <div class="container">
+                  <div class="gridLayout" id="universitiesGroup">
+
+                  </div>
+                </div>
+            </section>
+        </section>
+        <footer id="site-footer">
+          <div class="container">
+            <div class="row">
+              <div id="aboutFooter" class="col-sm-12 col-md-6">
+                <h6 class="lang" key="about">Acerca de</h6>
+                <hr>
+                <p style="text-align: justify" key="aboutText">La cátedra “Digitalización y Ciberseguridad Hídrica” de la Universidad de Girona nace con el objetivo de promover la generación y transmisión de conocimiento de la ciberseguridad y los retos de la digitalización de las infraestructuras críticas dentro del ciclo integral del agua. La cátedra centrará sus esfuerzos en apoyar el desarrollo tecnológico y digital de las empresas en tecnologías de ciberseguridad ofreciendo soluciones a los retos más importantes a los que se enfrenta el sector, junto con las instituciones públicas implicadas, las empresas, y la ciudadanía. Dando especial importancia a su aplicación en infraestructuras críticas (o entidades críticas) del sistema hídrico español desde un punto de vista multidisciplinar, teniendo en cuenta no sólo la vertiente tecnológica de la ciberseguridad, sino también los aspectos jurídicos, criminológicos y regulatorios de la aplicación de estas tecnologías en el sector del agua.
                 </p>
-            </div>
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title lang" key="generalInfo" id="staticBackdropLabel" style="color: #3267b2; font-weight: bold;">Información General</h5>
-                </div>
-                <div class="modal-body">
-                  <p style="text-align: justify;">
-                    <b class="lang" key="fundingAgency">FUNDADORES: </b> <span class="lang" key="fundingInfo"> Instituto Nacional de Ciberseguridad de España M.P., S.A. (INCIBE) y Universidad de Girona</span><br><br>
-                    <b class="lang" key="duration">DURACIÓN:</b> 2024-2025<br><br>
-                    <b class="lang" key="coordinator">COORDINACIÓN:</b> Universidad de Girona<br><br>
-                    <b class="lang" key="leadResearchers">DIRECTOR:</b> Dr. Ignasi Rodríguez-Roda Layret<br><br>
-                    <b class="lang" key="otherResearchers">OTROS INVESTIGADORES:</b> Dr. Eusebio Calle, Dra. Dolors Canals, Dr. David Palma, Dr. Steven Kemp, Dr. Joaquim Comas, Dr. Jesús Colprim y Dr. Héctor Monclús<br><br>
-                    <b class="lang" key="budget">PRESUPUESTO:</b> 726.755 €
-                  </p>
-                </div>
-                <div class="modal-footer">
-                </div>
               </div>
-            </div>
-        </section>
-        <section class="sectionContainer" id="membersContainer">
-            <h3 class="lang" key="h3Members">GRUPOS DE INVESTIGACIÓN</h3>
-            <div class="container">
-                <div class="gridLayout" id="memberGroup">
-                </div>
-            </div>
-        </section>
-        <section class="sectionContainer" id="newsContainer">
-          <h3 class="lang" key="h3News">NOTICIAS</h3>
-          <div class="container" id="news">
-          </div>
-        </section>
-        <section class="sectionContainer" id="agendaContainer">
-            <h3 class="lang" key="h3Agenda">AGENDA</h3>
-            <div class="container" id="agenda">
-            </div>
-        </section>
-        <section class="sectionContainer" id="authoritiesContainer">
-          <h3 class="lang" key="h3Authorities">COLABORADORES PRINCIPALES</h3>
-          <div class="container">
-              <div class="gridLayout" id="authoritiesGroup">
-                
-              </div>
-            </div>
-        </section>
-        <section class="sectionContainer" id="universitiesContainer">
-          <h3 class="lang" key="h3Universities">OTROS COLABORADORES</h3>
-          <div class="container">
-              <div class="gridLayout" id="universitiesGroup">
 
+              <div class="col-xs-12 col-md-4">
+                <h6 class="lang" key="quickLinks">Enlaces rápidos</h6>
+                <hr>
+                <div style="display: flex; justify-content: space-between;">
+                  <ul class="footer-links">
+                    <li><a class="lang" key="overview" href="#container">Descripción General</a></li>
+                    <li><a class="lang" key="members" href="#membersContainer">Grupos de Investigación</a></li>
+                    <li><a class="lang" key="news" href="#newsContainer">Noticias</a></li>
+                    <li><a class="lang" key="agenda" href="#agendaContainer">Agenda</a></li>
+                    <li><a class="lang" key="authorities" href="#authoritiesContainer">Colaboradores Principales</a></li>
+                    <li><a class="lang" key="universities" href="#universitiesContainer">Otros Colaboradores</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-        </section>
-    </section>
-    <footer id="site-footer">
-      <div class="container">
-        <div class="row">
-          <div id="aboutFooter" class="col-sm-12 col-md-6">
-            <h6 class="lang" key="about">Acerca de</h6>
             <hr>
-            <p style="text-align: justify" key="aboutText">La cátedra “Digitalización y Ciberseguridad Hídrica” de la Universidad de Girona nace con el objetivo de promover la generación y transmisión de conocimiento de la ciberseguridad y los retos de la digitalización de las infraestructuras críticas dentro del ciclo integral del agua. La cátedra centrará sus esfuerzos en apoyar el desarrollo tecnológico y digital de las empresas en tecnologías de ciberseguridad ofreciendo soluciones a los retos más importantes a los que se enfrenta el sector, junto con las instituciones públicas implicadas, las empresas, y la ciudadanía. Dando especial importancia a su aplicación en infraestructuras críticas (o entidades críticas) del sistema hídrico español desde un punto de vista multidisciplinar, teniendo en cuenta no sólo la vertiente tecnológica de la ciberseguridad, sino también los aspectos jurídicos, criminológicos y regulatorios de la aplicación de estas tecnologías en el sector del agua.
-            </p>
           </div>
-
-          <div class="col-xs-12 col-md-4">
-            <h6 class="lang" key="quickLinks">Enlaces rápidos</h6>
-            <hr>
-            <div style="display: flex; justify-content: space-between;">
-              <ul class="footer-links">
-                <li><a class="lang" key="overview" href="#container">Descripción General</a></li>
-                <li><a class="lang" key="members" href="#membersContainer">Grupos de Investigación</a></li>
-                <li><a class="lang" key="news" href="#newsContainer">Noticias</a></li>
-                <li><a class="lang" key="agenda" href="#agendaContainer">Agenda</a></li>
-                <li><a class="lang" key="authorities" href="#authoritiesContainer">Colaboradores Principales</a></li>
-                <li><a class="lang" key="universities" href="#universitiesContainer">Otros Colaboradores</a></li>
-              </ul>
-            </div>  
-          </div>
-        </div>
-        <hr>
-      </div>
-    </footer>
+        </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./JavaScript/dynamicObjects.js"></script>
-    <script src="./JavaScript/languages.js"></script>
-    <script src="./JavaScript/app.js"></script>
-    <script src="./JavaScript/footer.js"></script>
-</body>
-</html>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="./JavaScript/dynamicObjects.js"></script>
+        <script src="./JavaScript/languages.js"></script>
+        <script src="./JavaScript/app.js"></script>
+        <script src="./JavaScript/footer.js"></script>
+    </body>
+    </html>
