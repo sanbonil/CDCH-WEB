@@ -2,50 +2,38 @@ const members = [
     //id, nameEN,nameES, briefEN,briefES,briefCAT, descriptionEN,descriptionES,descriptionCAT, link
     {
         id : 1,
-        nameEN : "Dr. Ignasi Rodriguez-Roda Layret",
-        nameES : "Laboratorio de Ingeniería Química y Analítica - LEQUIA",
-        briefEN: "Professor, UdG, Cathedra Director",
+        nameEN : "",
+        nameES : "Ingeniería ambiental del agua",
+        briefEN: "",
         briefES: "",
-        briefCAT: "Catedràtic, UdG, Director de Càtedra",
-        descriptionEN:"Chemical engineering professor at the Universitat de Girona and senior Researcher at LEQUiA-UdG",
-        descriptionES:"El Laboratori d’Enginyeria Química i Ambiental (LEQUIA) es un grupo de investigación de la Universitat de Girona, que desarrolla soluciones eco-innovadoras en el ámbito del medio ambiente. Las líneas actuales de investigación son: 1) bioprocesos innovadores para el tratamiento, la recuperación de recursos y la síntesis de nuevos productos; 2) procesos avanzados fisicoquímicos para el tratamiento y/o reutilización de efluentes líquidos y gaseosos; y 3) la planificación y control, así como la evaluación de sistemas ambientales complejos.",
-        descriptionCAT:"Dra. Sara Rodríguez-Mozaz centra la seva recerca en el desenvolupament d'eines analítiques avançades per estudiar l'origen, el destí i l'impacte ecològic dels anomenats contaminants emergents al medi ambient i sobre la salut humana. És IP de ReUseMP3 i líder de WP3, WP4 i WP5.",
+        briefCAT: "",
+        descriptionEN:"",
+        descriptionES:"",
+        descriptionCAT:"",
         link: ""
     },
    {
         id : 2,
-        nameEN : "Dr. Gianluigi Buttiglieri",
-        nameES : "Investigadores Criminología",
-        briefEN: "Research Scientist, ICRA, PI of ReUseMP3",
+        nameEN : "",
+        nameES : "Ciberseguridad",
+        briefEN: "",
         briefES:"",
-        briefCAT:"Investigador científic, ICRA, PI de ReUseMP3",
-        descriptionEN:"Dr. Gianluigi Buttiglieri focuses his research on water reuse, circular economy, and nature-based solutions, with a special attention on the fate of organic micropollutants in water and wastewater technologies. He is PI of ReUseMP3 and leader of WP1, WP2 and WP4.",
+        briefCAT:"",
+        descriptionEN:"",
         descriptionES:"",
-        descriptionCAT:"Dr. Gianluigi Buttiglieri centra la seva recerca en la reutilització de l'aigua, l'economia circular i les solucions basades en la natura, amb una atenció especial al destí dels microcontaminants orgànics a les tecnologies de tractament de les aigües residuals. És IP de ReUseMP3 i líder dels WP1, WP2 i WP4.",
+        descriptionCAT:"",
         link: ""
     },
     {
         id : 3,
-        nameEN : "Dr. Quim Comas",
-        nameES : "Investigadores Derecho",
-        briefEN: "Professor, UdG",
+        nameEN : "",
+        nameES : "Criminologia y derecho",
+        briefEN: "",
         briefES:"",
-        briefCAT:"Professor, UdG",
-        descriptionEN:"Dr. Quim Comas is expert on the development of tools and technologies to foster the implementation of circular economy in the urban water cycle, multicriteria decision support systems, nature-based solutions, and membrane technologies. In ReUseMP3 he will be working mainly in WP2 and WP6.",
+        briefCAT:"",
+        descriptionEN:"",
         descriptionES:"",
-        descriptionCAT:"Dr. Quim Comas és expert en el desenvolupament d'eines i tecnologies per fomentar la implementació de l'economia circular al cicle urbà de l'aigua, sistemes de suport a la decisió multicriteri, solucions basades en la naturalesa i tecnologies de membranes. A ReUseMP3 treballarà principalment als WP2 i WP6.",
-        link: ""
-    },
-   {
-        id : 4,
-        nameEN : "Dr. Eusebi Calle Ortega",
-        nameES : "Broadband Communications and Distributed Systems - BCDS",
-        briefEN: "Professor, UdG",
-        briefES:"",
-        briefCAT:"Professor, UdG",
-        descriptionEN:"Dr. Eusebi Calle Ortega has expertise in the design and analysis of availability, robustness, and routing schemes in different types of networks, including water distribution networks. In ReUseMP3 he will be working mainly in WP6.",
-        descriptionES:"El grupo de investigación BCDS-UdG tiene experiencia en la aplicación de la ciencia de redes, la teoría de grafos y la inteligencia artificial/aprendizaje automático al área de redes informáticas (por ejemplo, diseño de mecanismos de enrutamiento, resiliencia y gestión dinámica de recursos) y al área de redes de agua (por ejemplo, diseño de redes de distribución de agua y colocación de sensores en redes de aguas residuales) ",
-        descriptionCAT:"Dr. Eusebi Carrer Ortega té experiència en el disseny i l'anàlisi de disponibilitat, robustesa i esquemes d'encaminament en diferents tipus de xarxes, incloses les xarxes de distribució d'aigua. A ReUseMP3 treballarà principalment a WP6.",
+        descriptionCAT:"",
         link: ""
     },
   /*  {
@@ -187,20 +175,13 @@ const jobOffers=[
 
 const news=[
     //name,briefEN,briefES,briefCAT,link
-   /* {
-        name:"ICRA newsletter September 2021",
+   {
+        name:"INCIBE Sectores Estratégicos: Aguas",
         briefEN:"",
-        briefES:"",
+        briefES:"La ciberseguridad es un aspecto crucial en el sector del tratamiento de aguas, ya que los sistemas de control y gestión de plantas y distribución del agua están cada vez más conectados a redes y sistemas informáticos. La protección de estos sistemas es esencial para prevenir posibles ataques cibernéticos que podrían comprometer la calidad del agua, la operación y la seguridad pública. Dentro de este sector destacamos el tratamiento de aguas para consumo humano y aguas residuales.",
         briefCAT:"",
-        link:"https://mailchi.mp/a1811b7d3d04/icra-news-setembre-2021?e=b546b9fa1f"
-    },
-    {
-        name:"RETEMA",
-        briefEN:"Nature-based solutions for the transition to circular cities",
-        briefES:"Soluciones basadas en la naturaleza para la transición a ciudades circulares",
-        briefCAT:"Solucions basades en la natura per a la transició a ciutats circulars",
-        link:"https://www.retema.es/noticia/soluciones-basadas-en-la-naturaleza-para-la-transicion-hacia-ciudades-circulares-R2cY"
-    }*/
+        link:"https://www.incibe.es/incibe-cert/sectores-estrategicos/aguas"
+    }
 ]
 
 const agenda=[
