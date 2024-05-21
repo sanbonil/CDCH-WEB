@@ -72,7 +72,7 @@ $(function(){
 
 function renderDynamicObjects(){
   //Members rendering
-  const memberContainer = document.getElementById("memberGroup")
+ /* const memberContainer = document.getElementById("memberGroup")
   memberContainer.innerHTML=""
   for(let member of members){
     memberContainer.innerHTML+=`
@@ -109,23 +109,27 @@ function renderDynamicObjects(){
       </div>
     `
   }
-
+  */
   //News rendering
   const newsContainer = document.getElementById("news")
   newsContainer.innerHTML=""
+  news.sort((a,b) => b.data - a.data);
   for(let noticia of news){
     newsContainer.innerHTML+=`
+    <h4>${noticia.data.toLocaleDateString("es-ES")}</h4>
     <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">More information</a></p>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a></p>
     `
   }
 
   const agendaContainer = document.getElementById("agenda")
   agendaContainer.innerHTML=""
+  agenda.sort((a,b) => b.data - a.data);
   for(let noticia of agenda){
     agendaContainer.innerHTML+=`
+    <h4>${noticia.data.toLocaleDateString("es-ES")}</h4>
     <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">More information</a></p>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a></p>
     `
   }
 }
@@ -134,9 +138,9 @@ function renderSupporters(){
   //Authorities rendering
   const authoritiesContainer = document.getElementById("authoritiesGroup")
   authoritiesContainer.innerHTML=""
-  for(let i=1;i<5;i++){
+  for(let i=1;i<6;i++){
     authoritiesContainer.innerHTML+=`
-    <img class="institutionImage" src="./images/authority${i}.png" alt="authority image">
+    <a style="width: 12.5%" href="${links_images[i-1].link}"><img style="width: 100%" src="./images/authority${i}.png" alt="authority image"></a>
     `
   }
 
