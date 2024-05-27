@@ -118,7 +118,7 @@ function renderDynamicObjects(){
     newsContainer.innerHTML+=`
     <h4>${noticia.data.toLocaleDateString("es-ES")}</h4>
     <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a></p>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}`:``}${noticia.link!==""?`<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a>`:``}</p>
     `
   }
 
@@ -129,7 +129,7 @@ function renderDynamicObjects(){
     agendaContainer.innerHTML+=`
     <h4>${noticia.data.toLocaleDateString("es-ES")}</h4>
     <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}<br>`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}<br>`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}<br>`:``}<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a></p>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}`:``}${noticia.link!==""?`<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a>`:``}</p>
     `
   }
 }
@@ -141,31 +141,6 @@ function renderSupporters(){
   for(let i=1;i<6;i++){
     authoritiesContainer.innerHTML+=`
     <a style="width: 12.5%" href="${links_images[i-1].link}"><img style="width: 100%" src="./images/authority${i}.png" alt="authority image"></a>
-    `
-  }
-
-  //Universities rendering
-  const universitiesContainer = document.getElementById("universitiesGroup")
-  universitiesContainer.innerHTML=""
-  for(let i=1;i<0;i++){
-    universitiesContainer.innerHTML+=`
-    <img class="institutionImage" src="./images/university${i}.png" alt="university image">
-    `
-  }
-
-  //Companies rendering
-  const companiesContainer = document.getElementById("companiesGroup")
-  const othersContainer = document.getElementById("othersGroup")
-  companiesContainer.innerHTML=""
-  for(let i=2;i<3;i++){
-    companiesContainer.innerHTML+=`
-    <img class="institutionImage" src="./images/company${i}.png" alt="company image">
-    `
-  }
-  othersContainer.innerHTML=""
-  for(let i=0;i<0;i++){
-    othersContainer.innerHTML+=`
-    <img class="companyImage" src="./images/company${i}.png" alt="company image">
     `
   }
 }
