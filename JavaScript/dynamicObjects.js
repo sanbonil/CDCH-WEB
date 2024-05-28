@@ -63,7 +63,7 @@ const news =[
             "compra pública innovadora del sector (Universidad de la Coruña, Universidad\n" +
             "de Extremadura, Emalcsa y Tecdesoft).<p>",
         briefCAT:"",
-        link:"https://x.com/INCIBE/status/1788864141211365884", // If link does not exist, has to be set at "" (only correct option)
+        link:"https://www.incibe.es/incibe/sala-de-prensa/incibe-ptea-y-aga-colaboran-para-elevar-el-nivel-de-ciberseguridad-en-el", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,4,10), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
     {
