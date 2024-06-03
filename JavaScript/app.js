@@ -140,7 +140,7 @@ function renderSupporters(){
   let authoritiesHtml = ""
   authoritiesContainer.innerHTML=""
   for(let i=1;i<6;i++){
-    authoritiesHtml +=`<div style="width: 15%;">
+    authoritiesHtml +=`<div style="width: 12.5%;font-size: 0.8rem">
     <a style="width: 240px" ref="${links_images[i-1].link}"><img style="width: 100%; height: 175px" src="./images/authority${i}.png" alt="authority image"></a> <br>`
     for (let j=0;j<links_images[i-1].members.length;j++){
         authoritiesHtml +=`<br>${links_images[i-1].members[j].name}`
