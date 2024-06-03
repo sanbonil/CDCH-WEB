@@ -132,18 +132,23 @@ const agenda=[
 ]
 const links_images=[
     {
-        link:"https://www.agbar.es/"
+        link:"https://www.agbar.es/",
+        members:[{name: "María Jesús Llorens Camares"}, {name: "Carlos Montero Ruano"}, {name: "Sergi Carmona Castro"}]
     },
     {
-        link:"https://cwp.cat/es/incio/"
+        link:"https://cwp.cat/es/incio/",
+        members:[{name: "Xavier Amores Bravo"}, {name: "Sergi Compte Port"}, {name: "Lucia Gusmaroli"}, {name: "Anna Rovira Talaveron"}, {name: "Aina Amengual Oliver"} ]
     },
     {
-        link:"https://icra.cat/"
+        link:"https://icra.cat/",
+        members:[{name: "Oriol Gutierrez Garcia-Moreno"}]
     },
     {
-        link:"https://eurecat.org/es/"
+        link:"https://eurecat.org/es/",
+        members:[{name: "Juan Caubet"},{name: "Xavi Domingo"},{name: "Lali Soler"}, {name: "Xavi Martinez"}, {name: "David Martinez Alvarez"}]
     },
     {
-        link:"https://ciberseguretat.gencat.cat/ca/agencia/que-fem/estic-cibersegur/"
+        link:"https://ciberseguretat.gencat.cat/ca/agencia/que-fem/estic-cibersegur/",
+        members:[{name: "Roger Martinez"}, {name: "Xavier Inglés"}, {name: "Mónica Espinosa"}, {name: "Enrique Serra"}, {name: "Iván Monforte"}, {name: "Santiago Romeu"}, {name: "Tomàs More"}, {name: "Isart Canyameres"}]
     },
 ]

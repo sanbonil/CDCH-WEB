@@ -137,12 +137,17 @@ function renderDynamicObjects(){
 function renderSupporters(){
   //Authorities rendering
   const authoritiesContainer = document.getElementById("authoritiesGroup")
+  let authoritiesHtml = ""
   authoritiesContainer.innerHTML=""
   for(let i=1;i<6;i++){
-    authoritiesContainer.innerHTML+=`
-    <a style="width: 12.5%" href="${links_images[i-1].link}"><img style="width: 100%" src="./images/authority${i}.png" alt="authority image"></a>
-    `
+    authoritiesHtml +=`<div style="width: 15%;">
+    <a style="width: 240px" ref="${links_images[i-1].link}"><img style="width: 100%; height: 175px" src="./images/authority${i}.png" alt="authority image"></a> <br>`
+    for (let j=0;j<links_images[i-1].members.length;j++){
+        authoritiesHtml +=`<br>${links_images[i-1].members[j].name}`
+    }
+    authoritiesHtml += `</div>`
   }
+  authoritiesContainer.innerHTML = authoritiesHtml
 }
 
 //render all the dynamic components of the page and the supporters
