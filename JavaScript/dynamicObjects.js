@@ -1,43 +1,3 @@
-const members = [
-    //id, nameEN,nameES, briefEN,briefES,briefCAT, descriptionEN,descriptionES,descriptionCAT, link
-    {
-        id : 1,
-        nameEN : "",
-        nameES : "Ingeniería ambiental del agua",
-        briefEN: "",
-        briefES: "",
-        briefCAT: "",
-        descriptionEN:"",
-        descriptionES:"",
-        descriptionCAT:"",
-        link: ""
-    },
-   {
-        id : 2,
-        nameEN : "",
-        nameES : "Ciberseguridad",
-        briefEN: "",
-        briefES:"",
-        briefCAT:"",
-        descriptionEN:"",
-        descriptionES:"",
-        descriptionCAT:"",
-        link: ""
-    },
-    {
-        id : 3,
-        nameEN : "",
-        nameES : "Criminologia y derecho",
-        briefEN: "",
-        briefES:"",
-        briefCAT:"",
-        descriptionEN:"",
-        descriptionES:"",
-        descriptionCAT:"",
-        link: ""
-    }
-]
-
 const news =[
     //name,briefEN,briefES,briefCAT,link,data
    {
@@ -133,22 +93,17 @@ const agenda=[
 const links_images=[
     {
         link:"https://www.agbar.es/",
-        members:[{name: "María Jesús Llorens Camares"}, {name: "Carlos Montero Ruano"}, {name: "Sergi Carmona Castro"}]
     },
     {
         link:"https://cwp.cat/es/incio/",
-        members:[{name: "Xavier Amores Bravo"}, {name: "Sergi Compte Port"}, {name: "Lucia Gusmaroli"}, {name: "Anna Rovira Talaveron"}, {name: "Aina Amengual Oliver"} ]
     },
     {
         link:"https://icra.cat/",
-        members:[{name: "Oriol Gutierrez Garcia-Moreno"}]
     },
     {
         link:"https://eurecat.org/es/",
-        members:[{name: "Juan Caubet"},{name: "Xavi Domingo"},{name: "Lali Soler"}, {name: "Xavi Martinez"}, {name: "David Martinez Alvarez"}]
     },
     {
         link:"https://ciberseguretat.gencat.cat/ca/agencia/que-fem/estic-cibersegur/",
-        members:[{name: "Roger Martinez"}, {name: "Xavier Inglés"}, {name: "Mónica Espinosa"}, {name: "Enrique Serra"}, {name: "Iván Monforte"}, {name: "Santiago Romeu"}, {name: "Tomàs More"}, {name: "Isart Canyameres"}]
     },
 ]
