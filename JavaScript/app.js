@@ -139,14 +139,21 @@ function renderSupporters(){
   const authoritiesContainer = document.getElementById("authoritiesGroup")
   let authoritiesHtml = ""
   authoritiesContainer.innerHTML=""
+  authoritiesHtml += `<div style="display: flex" class="gridLayout2">`
   for(let i=1;i<6;i++){
     authoritiesHtml +=`<div style="width: 12.5%;font-size: 0.8rem">
-    <a style="width: 240px" ref="${links_images[i-1].link}"><img style="width: 100%; height: 175px" src="./images/authority${i}.png" alt="authority image"></a> <br>`
+    <a style="width: 240px" ref="${links_images[i-1].link}"><img style="width: 100%" src="./images/authority${i}.png" alt="authority image"></a> <br> </div>`
+  }
+  authoritiesHtml += `</div>`
+  authoritiesHtml += `<div style="display: flex" class="gridLayout2">`
+  for(let i=1;i<6;i++){
+    authoritiesHtml +=`<div style="width: 12.5%;font-size: 0.8rem">`
     for (let j=0;j<links_images[i-1].members.length;j++){
-        authoritiesHtml +=`<br>${links_images[i-1].members[j].name}`
+      authoritiesHtml +=`<br>${links_images[i-1].members[j].name}`
     }
     authoritiesHtml += `</div>`
   }
+  authoritiesHtml += `</div>`
   authoritiesContainer.innerHTML = authoritiesHtml
 }
 
