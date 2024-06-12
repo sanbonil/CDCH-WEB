@@ -35,6 +35,10 @@ a{
     width: 100%;
 }
 
+#navtext{
+    font-size: 12px;
+}
+
 #navLogo2{
     height: 50px;
 }
@@ -411,7 +415,11 @@ h3{
 {
     font-family: initial;
 }
-
+@media(max-width: 1050px){
+    #navtext{
+        font-size: 10px;
+    }
+}
 
 @media (max-width:991px)
 {
