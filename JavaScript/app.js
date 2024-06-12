@@ -117,8 +117,8 @@ function renderDynamicObjects(){
   for(let noticia of news){
     newsContainer.innerHTML+=`
     <h4>${noticia.data.toLocaleDateString("es-ES")}</h4>
-    <h4 class="member-name advisor">${noticia.name}</h4>
-    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}`:``}${noticia.link!==""?`<a class="lang" key="moreInfo" href="${noticia.link}" target="_blank">Más información</a>`:``}</p>
+    <a href="${noticia.link}"</a> <h4 class="member-name advisor">${noticia.name}</h4></a>
+    <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}`:``}</p>
     `
   }
 
@@ -139,10 +139,10 @@ function renderSupporters(){
   const authoritiesContainer = document.getElementById("authoritiesGroup")
   let authoritiesHtml = ""
   authoritiesContainer.innerHTML=""
-  authoritiesHtml += `<div style="display: flex" class="gridLayout2">`
+  authoritiesHtml += `<div style="display: flex; align-items: baseline" class="gridLayout2">`
   for(let i=1;i<6;i++){
     authoritiesHtml +=`<div style="width: 12.5%;font-size: 0.8rem">
-    <a style="width: 240px" ref="${links_images[i-1].link}"><img style="width: 100%" src="./images/authority${i}.png" alt="authority image"></a> <br> </div>`
+    <a style="width: 240px" ref="${links_images[i-1].link}"><img style="width: 100%; text-align: center" src="./images/authority${i}.png" alt="authority image"></a> <br> </div>`
   }
   authoritiesContainer.innerHTML = authoritiesHtml
 }

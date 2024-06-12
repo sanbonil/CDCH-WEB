@@ -32,7 +32,7 @@ a{
 
 #navLogo{
     content: url("./images/logoheader.png");
-    width: 1000px;
+    width: 100%;
 }
 
 #navLogo2{
@@ -411,7 +411,6 @@ h3{
 {
     font-family: initial;
 }
-
 
 
 @media (max-width:991px)
