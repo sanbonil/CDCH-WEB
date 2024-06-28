@@ -40,7 +40,8 @@ a{
 }
 
 #navLogo2{
-    height: 50px;
+    width: 80%;
+    padding-bottom: 20px;
 }
 
 #languageList{
