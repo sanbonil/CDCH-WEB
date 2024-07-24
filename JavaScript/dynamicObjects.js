@@ -53,6 +53,14 @@ const news =[
         link:"", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,6,2), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
+    {
+        name:"Abiertas las inscripciones para el Hackathon Cassini que tendrá lugar del 13 al 15 de septiembre",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> La Cátedra en Digitalización y Ciberseguridad Hídrica de la UdG coorganiza la séptima edición del Hackathon Cassini del 13 al 15 de septiembre en Castelldefels. Este evento se enfoca en encontrar soluciones para la transición verde y la lucha contra el cambio climático. Desde la cátedra aportaremos expertos en agua así como de ciberseguridad, para que los participantes puedan trabajar en retos que se acerquen lo más posible a la realidad del ciclo del agua y tengan en cuenta la ciberseguridad en las soluciones que aporten, ya que en este entorno cada vez más digitalizado esto es de vital importancia. En el link de esta noticia es posible realizar la inscripción al evento, será una gran oportunidad de networking, de aportar soluciones a problemas reales y de ganar grandes premios. ¡Mucha suerte! <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/cassini_Logo_A.png\" alt=\"Foto de grupo del primer workshop de la cátedra.\"> <br>",
+        briefCAT:"",
+        link:"https://kimglobal.com/ca/cassini-hackathon/", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,6,24), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
 ]
 
 const agenda=[
@@ -88,6 +96,14 @@ const agenda=[
         briefCAT:"",
         link:"", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,5,5), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Hackathon Cassini en Castelldefels",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,13), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
     {
         name:"Primer workshop interno con las entitades colaboradoras",
