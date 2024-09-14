@@ -114,7 +114,39 @@ const agenda=[
         data: new Date(2024,8,13), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
     {
-        name:"Primer workshop interno con las entitades colaboradoras",
+        name:"Smart Water Summit",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,19), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Charla en el cosmocaixa",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,26), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Noche de la investigación",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,26), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Congreso Young Water Professionals",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,9,29), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Primer workshop interno con las entidades colaboradoras",
         briefEN:"",
         briefES:"",
         briefCAT:"",
