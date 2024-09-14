@@ -61,6 +61,14 @@ const news =[
         link:"https://kimglobal.com/ca/cassini-hackathon/", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,6,24), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
+    {
+        name:"Dos equipos de estudiantes de la UdG i 12 mentores participan en el Cassini Hackathon",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> Ya está en marcha el Hackathon de Cassini donde estudiantes, investigadores y emprendedores trabajan en equipo para encontrar soluciones para la transición verde y la lucha contra el cambio climático. Durante el viernes y el sábado han tenido la suerte de contar con la presencia de varios mentores expertos en temáticas distintas como políticas ambientales, medioambiente, infraestructuras hídricas, ciberseguridad, datos geoespaciales y gestión del agua. Los ganadores se llevaran premios de 1000€ y 500€ y además tendrán que hacer la presentación a un jurado internacional con los ganadores del resto de paises participantes. ¡Deseamos mucha suerte a todos los equipos mañana el pitch! <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/hackathon.jfif\" alt=\"Foto de los participantes del hackathon.\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,9,14), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
 ]
 
 const agenda=[
