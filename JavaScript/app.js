@@ -111,7 +111,24 @@ function renderDynamicObjects(){
   }
   */
   //News rendering
-  const newsContainer = document.getElementById("news")
+  
+  const newsContainer = document.getElementById("news");
+  newsContainer.innerHTML = "";
+  news.sort((a, b) => b.data - a.data);
+  
+  for (let noticia of news) {
+    newsContainer.innerHTML += `
+      <h4>${noticia.data.toLocaleDateString("es-ES")}</h4>
+      ${noticia.link !== "" ? `<a href="${noticia.link}">` : ""} 
+      <h4 class="member-name advisor">${noticia.name}</h4>
+      ${noticia.link !== "" ? `</a>` : ""}
+      <p>${actualLanguage == "en" && noticia.briefEN !== "" ? `${noticia.briefEN}` : 
+          actualLanguage == "es" && noticia.briefES !== "" ? `${noticia.briefES}` : 
+          actualLanguage == "cat" && noticia.briefCAT !== "" ? `${noticia.briefCAT}` : ``}
+      </p>
+    `;
+  }
+   /* const newsContainer = document.getElementById("news")
   newsContainer.innerHTML=""
   news.sort((a,b) => b.data - a.data);
   for(let noticia of news){
@@ -120,7 +137,7 @@ function renderDynamicObjects(){
     <a href="${noticia.link}"</a> <h4 class="member-name advisor">${noticia.name}</h4></a>
     <p>${actualLanguage=="en"&&noticia.briefEN!==""?`${noticia.briefEN}`:actualLanguage=="es"&&noticia.briefES!==""?`${noticia.briefES}`:actualLanguage=="cat"&&noticia.briefCAT!==""?`${noticia.briefCAT}`:``}</p>
     `
-  }
+  }*/
 
   const agendaContainer = document.getElementById("agenda")
   agendaContainer.innerHTML=""
