@@ -67,7 +67,31 @@ const news =[
         briefES: "<p style='text-align: justify'> Ya está en marcha el Hackathon de Cassini donde estudiantes, investigadores y emprendedores trabajan en equipo para encontrar soluciones para la transición verde y la lucha contra el cambio climático. Durante el viernes y el sábado han tenido la suerte de contar con la presencia de varios mentores expertos en temáticas distintas como políticas ambientales, medioambiente, infraestructuras hídricas, ciberseguridad, datos geoespaciales y gestión del agua. Los ganadores se llevaran premios de 1000€ y 500€ y además tendrán que hacer la presentación a un jurado internacional con los ganadores del resto de paises participantes. ¡Deseamos mucha suerte a todos los equipos mañana el pitch! <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/hackathon.jfif\" alt=\"Foto de los participantes del hackathon.\"> <br>",
         briefCAT:"",
         link:"", // If link does not exist, has to be set at "" (only correct option)
-        data: new Date(2024,9,14), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+        data: new Date(2024,8,14), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Asistimos al Smart Water Summit",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> El pasado 19 de setiembre asistimos al congreso Smart Water Summit donde el tema de la ciberseguridad apareció en muchas de las ponencias y, especialmente, en la sesión dedicada al tema que clausuró la sala técnica. <br> De esta sesión destacamos la preocupación por la creciente amenaza de los ciberataques contra las infraestructuras hídricas, tanto a nivel global como a nivel español. También la recomendación de seis medias clave para fortalecer la ciberseguridad en las infraestructuras hídricas: <br> 1. No conectar los equipos de control industrial a internet, en la medida de lo posible. <br> 2. Cambiar las contraseñas por defecto. <br> 3. Hacer copias de seguridad de los equipos industriales para una reposición rápida si es necesario. <br> 4. Proteger los accesos remotos con firewall, VPN y dos factores de autentificación. <br> 5. Cambiar los puertos TCP que se utilizan por defecto. <br> 6. Actualizar los equipos industriales. <br> Finalmente, destacamos también el recordatorio de que la Directiva NIS2, y su transposición a la legislación española, exigirán a las organizaciones implementar una serie de medidas: análisis de riesgos, gestión de incidentes, continuidad de la actividad y la seguridad en la cadena de suministro. Desde la cátedra de digitalización y ciberseguridad hídrica de la UdG hemos preparado un documento explicativo de esta directiva y en nuestro cibercampus se encontrará una formación virtual al respecto. <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/sws.jpeg\" alt=\"Foto del Smart Water Summit\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,19), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Formamos ciberagentes en la Noche Europea de la Investigación",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> El pasado 27 de setiembre se celebró la Noche Europea de la Investigación, una jornada internacional que se celebra simultáneamente en más de 300 ciudades europeas. El objetivo de este día es acercar la investigación y la ciencia a la sociedad e inspirar a las nuevas generaciones, mediante actividades accesibles para todas las edades. La plaza Salvador Espriu de Girona acogió actividades interactivas y educativas, incluyendo talleres, cuentos y juegos científicos. <br> Entre ellas, invitamos a las famílias a luchar contra los ciberataques en estructuras hídricas, siendo conscientes de cual es el ciclo del agua y sus infraestructuras. Los niños que consiguieron parar los ataques consiguieron su carnet de ciberagente y sus padres el folleto informativo de la cátedra y INCIBE. <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/nitrecerca.jpeg\" alt=\"Foto de la noche de la investigación\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,27), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Charla sobre ciberseguridad hídrica en el CosmoCaixa de Girona",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> En colaboración con la fundación la Caixa, participamos el pasado 26 de setiembre en una sesión de charlas dedicadas a la investigación. Presentamos el trabajo que hace nuestra cátedra así como ejemplos de los peligros y impacto que puede tener un ciberataque en una infraestructura hídrica. También repasamos varios conceptos técnicos relacionados con la ciberseguridad, el ciclo del agua y qué hacer cuando somos ciberatacados. <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/microxerrada.jpeg\" alt=\"Foto del cosmocaixa\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,8,26), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
 ]
 
