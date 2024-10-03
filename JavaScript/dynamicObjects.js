@@ -93,6 +93,14 @@ const news =[
         link:"", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,8,26), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
+    {
+        name:"Congreso New Space Economies",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> El pasado 2 de octubre representantes de la Cátedra INCIBE de Digitalización y Ciberseguridad Hídrica fueron presentes al New Space Economy Congress 2024. En el congreso se explicaron distintas aplicaciones espaciales para avanzar hacia la sostenibilidad, entre las cuales se trató la gestión del agua y del cambio climático. Además, se expusieron distintos proyectos sobre la utilización de aplicaciones satélites en el campo del agua. <br> La asistencia en este congreso fue importante para conocer nuevas empresas y centros de recerca que trabajan en el mundo del agua y estrechar relaciones para futuras colaboraciones en proyectos. <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/newspace.jfif\" alt=\"Foto del cosmocaixa\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,9,2), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
 ]
 
 const agenda=[
