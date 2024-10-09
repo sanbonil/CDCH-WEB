@@ -167,15 +167,37 @@ const agenda=[
         briefES:"",
         briefCAT:"",
         link:"", // If link does not exist, has to be set at "" (only correct option)
-        data: new Date(2024,8,26), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+        data: new Date(2024,8,27), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
     {
         name:"Congreso Young Water Professionals",
         briefEN:"",
         briefES:"",
         briefCAT:"",
-        link:"", // If link does not exist, has to be set at "" (only correct option)
+        link:"https://www.ywp-spain.es/event/conference-ywp-2024/", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,9,29), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
+        name:"Congreso New Space Economy",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"https://www.newspacecongress.cat/en/", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,9,2), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },{
+        name:"V Fòrum LEQUIA, la ciberseguretat de les infraestructures hídriques",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"https://esdeveniments.udg.edu/122672/programme/v-forum-lequia.html", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,10,8), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },{
+        name:"Diada de Sant Albert, talleres a bachillerato",
+        briefEN:"",
+        briefES:"",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,10,15), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
     {
         name:"Primer workshop interno con las entidades colaboradoras",
