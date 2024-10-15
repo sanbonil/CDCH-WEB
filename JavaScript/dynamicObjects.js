@@ -100,6 +100,13 @@ const news =[
         briefCAT:"",
         link:"", // If link does not exist, has to be set at "" (only correct option)
         data: new Date(2024,9,2), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },{
+        name:"Dos equipos de la UdG participaran en el AB DATA CHALLENGE 2024",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> El Programa AB Data Challenge es una iniciativa impulsada por Aigües de Barcelona que, en colaboración con universidades y centros de investigación de Cataluña, pretende potenciar los datos recopilados por el servicio de Telelectura de Aigües de Barcelona y convertirlos en fuente de innovación interdisciplinaria.La Universitat de Girona presentó dos propuestas de proyectos que han sido seleccionadas para participar en la siguiente fase de desarrollo de proyectos del AB DATA CHALLENGE 2024. Hasta el 1 de diciembre tienen tiempo para presentar sus prototipos. ¡Mucha suerte a todos los participantes! <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/datachallenge.jpg\" alt=\"Agbar Data Challenge\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,9,15), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
 ]
 
