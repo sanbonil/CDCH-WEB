@@ -54,6 +54,14 @@ const news =[
         data: new Date(2024,9,29), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
     },
     {
+        name:"La importancia de la ciberseguridad y la cátedra INCIBE en el fórum LEQUIA",
+        briefEN:"",
+        briefES: "<p style='text-align: justify'> El pasado 8 de noviembre se presentó ante los 143 asistentes del fórum LEQUIA (entidades del sector público y privado relacionado con el ciclo del agua potable, investigadores y estudiantes) la importancia de la ciberseguridad en las infraestructuras hídricas cada vez mas digitalizadas, así como las novedades de la normativa NIS2 y como estas afectan al sector, así como amenazas de ciberseguridad y recomendaciones de protección. </p> </body> <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/forumlequia.jpeg\" alt=\"Presentación de la NIS2.\"> <br>",
+        briefCAT:"",
+        link:"", // If link does not exist, has to be set at "" (only correct option)
+        data: new Date(2024,10,8), //Careful, second parameter that indicates month index has values between 0 to 11, meaning 0 is January.
+    },
+    {
         name:"INCIBE y la Cátedra en Digitalización y Ciberseguridad Hídrica de la UdG organizan su primer workshop",
         briefEN:"",
         briefES: "<p style='text-align: justify'> La Universitat de Girona (UdG) acogió el 2 de julio el primer worksop sobre ciberseguridad hídrica organizado por el Instituto Nacional de Ciberseguridad (INCIBE), entidad dependiente del Ministerio para la Transformación Digital y de la Función Pública, la Cátedra en Digitalización y Ciberseguridad Hídrica y los colaboradores de la Cátedra: Catalan Water Partnership, ICRA, Eurecat, Agbar y la Agencia de Ciberseguridad de Cataluña. En esta primera toma de contacto se han puesto en común las diferentes sensibilidades y acciones existentes frente a la ciberseguridad hídrica en España.<p> <p style='text-align: justify'> El vicerrector de Proyectos Estratégicos e Internacionalización de la UdG, Josep Calbó, llevó a cabo la bienvenida institucional a las 24 personas que ha reunido la jornada de trabajo. El encuentro ha contado con presentaciones sobre el estado de la digitalización en el sector del agua, sus obligaciones legales y la gestión de la ciberseguridad en el sector desde distintas perspectivas. La jornada ha finalizado con una puesta en común y una mesa redonda de conclusiones y futuras líneas de investigación. <p> <br> <img style='display: block;margin-left: auto;margin-right: auto; max-width: 30%; max-height: 30%' src=\"./images/noticia1_2.jpeg\" alt=\"Foto de grupo del primer workshop de la cátedra.\"> <br>",
